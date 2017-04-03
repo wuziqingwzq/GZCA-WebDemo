@@ -129,6 +129,10 @@ function envseal() {
     
 }
 
+function envopen(){
+
+}
+
 //获取用户证书管理系统直接录入的时间
 function gettime(timeString) {
     var time;
