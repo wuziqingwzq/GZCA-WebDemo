@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="commons-beanutils-1.8.01">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/commons-beanutils-1.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/commons-codec-1.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/commons-collections-3.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/commons-io-1.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/commons-lang-2.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/commons-logging-1.1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/core-1.51.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/ezmorph-1.0.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/gson-2.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/httpclient-4.3.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/httpcore-4.3.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/jcee-common-base-1.0.3.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/jcee-common-impl-1.0.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/jcee-common-sdk-1.0.4.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/json-lib-2.4-jdk15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/json-lib-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/log4j-1.2.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/pkix-1.51.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/prov-1.51.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/spark-app-sdk-1.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -11,20 +11,24 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Created by wuziqing on 2017-4-3.
+ * Created by wuziqing on 2017-4-5.
  */
-
-@WebServlet(name = "SparkRedirectServlet",urlPatterns = "/SparkRedirectServlet")
-public class SparkRedirectServlet extends HttpServlet {
+@WebServlet(name = "SendRedirectToSpark",urlPatterns = "/SendRedirectToSpark")
+public class SendRedirectToSpark extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+        if(request.getParameter("type").equals("login")){
+            try {
+                Oauth oauth = new Oauth();
+                String authURL = oauth.getAuthorizeURL(request);
+                System.out.println(authURL);
+                response.sendRedirect(authURL);
+            } catch (SparkConnectException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         this.doPost(request,response);
-    }
-
-    public void init(){
-        System.out.println("test servlet");
     }
 }

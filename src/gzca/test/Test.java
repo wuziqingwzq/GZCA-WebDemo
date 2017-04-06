@@ -1,5 +1,6 @@
 package gzca.test;
 
+import cn.com.syan.spark.app.sdk.connect.oauth.Oauth;
 import com.gzca.CA;
 import com.gzca.HttpClientUtil;
 import com.gzca.SSLClient;
@@ -15,7 +16,11 @@ import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 
 import javax.xml.ws.Response;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.*;
 
 /**
@@ -24,5 +29,9 @@ import java.util.*;
 public class Test {
     public static void main(String arg[]) {
 
+        Oauth oauth = new Oauth();
+        System.out.println(oauth);
+
     }
+
 }

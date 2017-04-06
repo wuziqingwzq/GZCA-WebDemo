@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="spark-app-sdk-1.0.3">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/src/lib/spark-app-sdk-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/spark-app-sdk-1.0.3.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

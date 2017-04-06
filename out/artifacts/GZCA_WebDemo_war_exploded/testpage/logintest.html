@@ -186,8 +186,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
                         </fieldset>
 
 
@@ -230,15 +228,26 @@
             </div>
 
             <div data-tab-panel-1="" class="am-tab-panel">
-                备注：用户证书管理系统接口测试
-                <div>
+                <!--备注：用户证书管理系统接口测试-->
 
-                </div>
             </div>
             <div data-tab-panel-2="" class="am-tab-panel">
                 <!--Spark统一认证平台接口测试-->
-
-
+                <form class="am-form" name="sparkform" method="post" action="">
+                    <fieldset>
+                        <legend>Spark登陆demo</legend>
+                        <div class="am-btn-toolbar">
+                            <div class="am-btn-group">
+                                <button type="button" class="am-btn am-btn-secondary am-round"
+                                        onclick="javascript:window.location.href='/WebDemo/SendRedirectToSpark?type=login'">
+                                    Spark登陆
+                                </button>
+                                <button type="button" class="am-btn am-btn-secondary am-round">证书推送
+                                </button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </div>
     </div>

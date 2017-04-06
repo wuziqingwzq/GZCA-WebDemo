@@ -1,6 +1,6 @@
 //测试函数
 function test() {
-    $("#cert_sign_serial").val(doSHA1("123123123"));
+
 
 }
 
