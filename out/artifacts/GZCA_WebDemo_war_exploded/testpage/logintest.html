@@ -73,12 +73,13 @@
     </div>
 </header>
 
+<input type=text hidden id="tabsSelect" name="tabsSelect" value="">
 <div class="am-container" id="demo-view" data-backend-compiled="">
-    <div data-am-widget="tabs" class="am-tabs am-tabs-d2">
+    <div data-am-widget="tabs" id="logintest-main-tabs" data-am-tabs="{noSwipe:1}" class="am-tabs am-tabs-d2">
         <ul class="am-tabs-nav am-cf">
-            <li class="am-active"><a href="[data-tab-panel-0]">Certificate</a></li>
-            <li class=""><a href="[data-tab-panel-1]">GZCA Verify</a></li>
-            <li class=""><a href="[data-tab-panel-2]">Spark</a></li>
+            <li id="tabs1" class="am-active"><a href="[data-tab-panel-0]">Certificate</a></li>
+            <li id="tabs2" class=""><a href="[data-tab-panel-1]">GZCA Verify</a></li>
+            <li id="tabs3" class=""><a href="[data-tab-panel-2]">Spark</a></li>
         </ul>
         <div class="am-tabs-bd">
             <div data-tab-panel-0="" class="am-tab-panel am-active">
@@ -117,6 +118,9 @@
                                             onclick="verifycert()">验证证书
                                     </button>
                                     <button type="button" class="am-btn am-btn-secondary am-round" onclick="test()">
+                                        测试按钮
+                                    </button>
+                                    <button type="button" class="am-btn am-btn-secondary am-round" onclick="test2()">
                                         测试按钮
                                     </button>
                                 </div>
@@ -226,7 +230,6 @@
                     </form>
                 </div>
             </div>
-
             <div data-tab-panel-1="" class="am-tab-panel">
                 <!--备注：用户证书管理系统接口测试-->
 
@@ -245,6 +248,25 @@
                                 <button type="button" class="am-btn am-btn-secondary am-round">证书推送
                                 </button>
                             </div>
+                        </div>
+                        <div>
+                            <form class="am-form">
+                                <fieldset>
+                                    <legend>Spark获取参数</legend>
+                                    <div class="am-form-group">
+                                        <label for="sparkAccessToken">AccessToken</label>
+                                        <input type="email" class="" id="sparkAccessToken" placeholder="获取服务器Token">
+                                    </div>
+                                    <div class="am-form-group">
+                                        <label for="openid">OpenID</label>
+                                        <input type="email" class="" id="openid" placeholder="获取服务器OpenID">
+                                    </div>
+                                    <div class="am-form-group">
+                                        <label for="extendID">用户扩展项</label>
+                                        <input type="email" class="" id="extendID" placeholder="获取应用扩展项">
+                                    </div>
+                                </fieldset>
+                            </form>
                         </div>
                     </fieldset>
                 </form>

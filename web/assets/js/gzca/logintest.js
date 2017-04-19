@@ -1,6 +1,8 @@
 //测试函数
 function test() {
+}
 
+function test2() {
 
 }
 
@@ -80,10 +82,10 @@ function pkcs1(sign) {
         var data = $("#data").val();
         var datab64 = b64x.EncodeString(data);
         var crtx = colx.CreateCertificateBase64(certValue);
-        if(crtx==""){
+        if (crtx == "") {
             alert("请先选择证书");
         }
-        var result = crtx.PKCS1Verify(signature,datab64);
+        var result = crtx.PKCS1Verify(signature, datab64);
         if (result == 0) {
             alert("PKCS1签名验证成功！");
         } else {
@@ -114,7 +116,7 @@ function CreateCertByFile() {
     var singleton = Singleton.getInstance();
     var netonex = singleton.getNetOneX();
     var colx = netonex.getCertificateCollectionX();
-    var crtx = colx.CreateCertificateFile("","","");
+    var crtx = colx.CreateCertificateFile("", "", "");
     $("#cert_sign_serial").val(crtx.SerialNumberHex);
     $("#cert_subject").val(crtx.Subject);
     $("#cert_sign_value").val(crtx.Content);
@@ -126,11 +128,32 @@ function CreateCertByFile() {
 }
 
 function envseal() {
-    
+    var singleton = Singleton.getInstance();
+    var netonex = singleton.getNetOneX();
+    var b64 = netonex.getBase64X();
+    var colx = netonex.getCertificateCollectionX();
+    colx.CF_KeyUsage = 16;
+    colx.Load();
+    var crtx = colx.SelectCertificateDialog();
+    var envsealdata = crtx.Envseal(b64.EncodeString($("#data").val()));
+    if (!(envsealdata == "" || envsealdata == null || envsealdata == undefined)) {
+        $("#signature").val(envsealdata);
+    }
 }
 
-function envopen(){
-
+function envopen() {
+    var singleton = Singleton.getInstance();
+    var netonex = singleton.getNetOneX();
+    var b64 = netonex.getBase64X();
+    var colx = netonex.getCertificateCollectionX();
+    colx.CF_KeyUsage = 16;
+    colx.Load();
+    var crtx = colx.SelectCertificateDialog();
+    var envdata = crtx.EnvOpen($("#signature").val());
+    envdata = b64.DecodeString(envdata);
+    if (!(envdata == "" || envdata == null || envdata == undefined)) {
+        $("#signature").val(envdata);
+    }
 }
 
 //获取用户证书管理系统直接录入的时间
@@ -138,7 +161,7 @@ function gettime(timeString) {
     var time;
     var String = timeString.split(" ");
     time = String[0];
-    time = time.replace(new RegExp("/","g"),"-")
+    time = time.replace(new RegExp("/", "g"), "-")
     return time;
 }
 
@@ -148,7 +171,7 @@ function doSHA1(str) {
     var netonex = singleton.getNetOneX();
     var hashx = netonex.getHashX();
     var teststr = hashx.HashString(str);
-    return(teststr);
+    return (teststr);
 }
 
 
@@ -156,12 +179,27 @@ function doSHA1(str) {
 //页面加载初始化
 $(document).ready(function () {
     $("#do-not-say-1").collapse('close');
+    var namevalue;
+    namevalue=$("input[name='tabsSelect']").attr("value");
+    alert($.session.get("accessToken"));
+    alert("标签参数值："+ namevalue);
 });
 
+/**
+ * 设置页面打开某个标签
+ * arg0 标签ID
+ * arg1 打开标签的序号
+ */
+function setTabsState(TabsID, tabIndex) {
+    var tabnum;
+    tabIndex > 0 ? tabnum = tabIndex - 1 : tabnum = 0;
+    $("#"+TabsID).tabs("open", tabnum);
+}
+
 //页面与后台交互Ajax函数
-function sendVerify(url,parameter) {
+function sendVerify(url, parameter) {
     //原生AJAX传递参数，参考代码
-    changemessage('连接中......请稍候',0);
+    changemessage('连接中......请稍候', 0);
 
     //创建xmlhttp对象，IE6以下创建ActiveXObject对象。
     var xmlhttp;
@@ -179,17 +217,17 @@ function sendVerify(url,parameter) {
 
     //发送请求
     xmlhttp.open(METHOD, URL);
-    xmlhttp.setRequestHeader("Content-Type","application/x-www-form-urlencoded; charset=UTF-8");
+    xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
     xmlhttp.send(parameter);
     // xmlhttp.send("cert_sign_serial=1231231231231231");
 
     //Ajax状态改变函数
     xmlhttp.onreadystatechange = function () {
-        if(xmlhttp.readyState !== 4){
-            changemessage('连接中......请稍候',"");
+        if (xmlhttp.readyState !== 4) {
+            changemessage('连接中......请稍候', "");
         }
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            changemessage(xmlhttp.responseText,"success");
+            changemessage(xmlhttp.responseText, "success");
 //                    document.getElementById("serverResult").innerHTML = xmlhttp.responseText;
         }
     }
@@ -201,26 +239,26 @@ function verifycert() {
     var url = "/WebDemo/gzcaverifylogin";
     var param = "cert_sign_serial=" + $("#cert_sign_serial").val()
         + "&type=" + type;
-    sendVerify(url,param);
+    sendVerify(url, param);
 }
 
 function verifysign() {
     var type = "VerifySign";
     var url = "/WebDemo/gzcaverifylogin";
     var param = "cert_sign_serial=" + $("#cert_sign_serial").val()
-            + "&data=" + $("#data").val()
-            + "&signature=" + $("#signature").val()
-            + "&type=" + type;
+        + "&data=" + $("#data").val()
+        + "&signature=" + $("#signature").val()
+        + "&type=" + type;
     // param = encodeURIComponent(param);
-    sendVerify(url,param);
+    sendVerify(url, param);
 }
 
-function changemessage(message,type) {
+function changemessage(message, type) {
     $("#serverResult").show();
     $("#serverResult p").empty();
     $("#serverResult p").append('<i class="am-icon-spinner am-icon-spin"></i>');
     $("#serverResult p").append(message);
-    if(type=="success"){
+    if (type == "success") {
         $("#serverResult").addClass("am-alert-success");
         $("#serverResult").show();
         $("#serverResult p").empty();

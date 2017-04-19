@@ -2,41 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb1dd5e0-78be-4008-91dc-2b828f95512e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/commons-beanutils-1.8.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/commons-codec-1.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/commons-collections-3.2.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/commons-io-1.3.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/commons-lang-2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/commons-logging-1.1.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/core-1.51.0.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/ezmorph-1.0.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/gson-2.3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/httpclient-4.3.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/httpcore-4.3.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/jcee-common-base-1.0.3.7.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/jcee-common-impl-1.0.4.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/jcee-common-sdk-1.0.4.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/json-lib-2.4-jdk15.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/json-lib-2.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/log4j-1.2.17.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/pkix-1.51.0.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/prov-1.51.0.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_beanutils_1_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_beanutils_1_8_01.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SendRedirectToSpark.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/WEB-INF/classes/gzca/test/Test.class" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/WEB-INF/classes/gzca/test/Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GZCA-WebDemo/gzca/test/Test.class" afterPath="$PROJECT_DIR$/out/production/GZCA-WebDemo/gzca/test/Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/GZCA_WebDemo_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/GZCA_WebDemo_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/spark_app_sdk_1_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/spark_app_sdk_1_0_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/testpage/SparkCallback.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GZCA-WebDemo.iml" afterPath="$PROJECT_DIR$/GZCA-WebDemo.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/gzca/logintest.js" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/gzca/logintest.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/testpage/logintest.html" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/testpage/logintest.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SparkRedirectServlet.java" afterPath="$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SparkRedirectServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gzca/test/Test.java" afterPath="$PROJECT_DIR$/src/gzca/test/Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/gzca/logintest.js" afterPath="$PROJECT_DIR$/web/assets/js/gzca/logintest.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/testpage/logintest.html" afterPath="$PROJECT_DIR$/web/testpage/logintest.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/lib/spark-app-sdk-1.0.3.jar" afterPath="$PROJECT_DIR$/src/lib/spark/spark-app-sdk-1.0.3.jar" />
     </list>
     <ignored path="GZCA-WebDemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,63 +46,12 @@
       <file leaf-file-name="logintest.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/testpage/logintest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="244" column="99" lean-forward="false" selection-start-line="244" selection-start-column="99" selection-end-line="244" selection-end-column="99" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="404.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/404.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+            <state relative-caret-position="1026">
+              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="73" selection-end-column="9" />
               <folding>
-                <marker date="1491199126349" expanded="true" signature="810:931" ph="..." />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SparkRedirectServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SparkRedirectServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SendRedirectToSpark.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SendRedirectToSpark.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="15" column="76" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gzca/test/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gzcaverifylogin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gzca/servlet/gzcaverifylogin/gzcaverifylogin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -137,8 +59,48 @@
       <file leaf-file-name="logintest.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/assets/js/gzca/logintest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="200" column="39" lean-forward="false" selection-start-line="200" selection-start-column="15" selection-end-line="200" selection-end-column="39" />
+            <state relative-caret-position="3458">
+              <caret line="182" column="3" lean-forward="false" selection-start-line="182" selection-start-column="3" selection-end-line="182" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1026">
+              <caret line="54" column="54" lean-forward="false" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="60" lean-forward="false" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SparkRedirectServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SparkRedirectServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="49" column="47" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SparkCallback.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/testpage/SparkCallback.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -152,6 +114,8 @@
         <option value="package-info" />
         <option value="JavaScript File" />
         <option value="Class" />
+        <option value="HTML File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -161,6 +125,15 @@
       <find>fieldset</find>
       <find>url</find>
       <find>Oauth</find>
+      <find>envseal</find>
+      <find>32</find>
+      <find>selectCertificate</find>
+      <find>loadCertificate</find>
+      <find>16</find>
+      <find>tabsSelect</find>
+      <find>doc-tab-demo-1</find>
+      <find>openID</find>
+      <find>jquery</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -195,11 +168,14 @@
         <option value="$PROJECT_DIR$/web/assets/js/gzca/netonex_zjq.js" />
         <option value="$PROJECT_DIR$/src/gzca/test/TryHttpClientUtil.java" />
         <option value="$PROJECT_DIR$/src/gzca/servlet/gzcaverifylogin/gzcaverifylogin.java" />
-        <option value="$PROJECT_DIR$/web/assets/js/gzca/logintest.js" />
         <option value="$PROJECT_DIR$/src/gzca/test/Test.java" />
         <option value="$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SendRedirectToSpark.java" />
-        <option value="$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SparkRedirectServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/1.html" />
+        <option value="$PROJECT_DIR$/web/1.html" />
+        <option value="$PROJECT_DIR$/web/assets/js/gzca/logintest.js" />
         <option value="$PROJECT_DIR$/web/testpage/logintest.html" />
+        <option value="$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SparkRedirectServlet.java" />
+        <option value="$PROJECT_DIR$/web/testpage/SparkCallback.jsp" />
       </list>
     </option>
   </component>
@@ -263,8 +239,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -301,11 +277,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GZCA-WebDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GZCA-WebDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testpage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GZCA-WebDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GZCA-WebDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -388,6 +396,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib/spark/spark-app-sdk-1.0.3.jar!/" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -401,11 +410,11 @@
       <recent name="D:\WorkSpace\GZCA-WebDemo\src\gzca\ca" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WorkSpace\GZCA-WebDemo\web" />
       <recent name="D:\WorkSpace\GZCA-WebDemo\src\lib\spark" />
       <recent name="D:\WorkSpace\GZCA-WebDemo\web\assets\js\gzca" />
       <recent name="D:\WorkSpace\GZCA-WebDemo\web\assets\js" />
       <recent name="D:\WorkSpace\GZCA-WebDemo\libs" />
-      <recent name="D:\WorkSpace\GZCA-WebDemo\web\testpage" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -984,7 +993,16 @@
       <workItem from="1491204527588" duration="420000" />
       <workItem from="1491357333532" duration="2610000" />
       <workItem from="1491366104340" duration="6328000" />
-      <workItem from="1491445070394" duration="3188000" />
+      <workItem from="1491445070394" duration="6636000" />
+      <workItem from="1491551249602" duration="35000" />
+      <workItem from="1491787037488" duration="1878000" />
+      <workItem from="1491981641953" duration="589000" />
+      <workItem from="1492054317559" duration="4135000" />
+      <workItem from="1492072116286" duration="674000" />
+      <workItem from="1492148436259" duration="3958000" />
+      <workItem from="1492480318858" duration="27028000" />
+      <workItem from="1492529519745" duration="1397000" />
+      <workItem from="1492573475621" duration="170000" />
     </task>
     <task id="LOCAL-00001" summary="Rejected commit: Default">
       <created>1491012939868</created>
@@ -1021,11 +1039,18 @@
       <option name="project" value="LOCAL" />
       <updated>1491204161931</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Rejected commit: Default">
+      <created>1491449810028</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1491449810028</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170190000" />
+    <option name="totallyTimeSpent" value="213502000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1054,22 +1079,22 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44153845" sideWeight="0.74900717" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.49722" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.47498015" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.49722" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3" sideWeight="0.77760124" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.4940429" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3" sideWeight="0.77760124" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.49086577" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23034154" sideWeight="0.7692308" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23034154" sideWeight="0.23076923" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2660842" sideWeight="0.6923077" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2660842" sideWeight="0.30769232" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.47498015" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962668" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1112,7 +1137,7 @@
           <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="68" />
+      <option name="time" value="71" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -1125,11 +1150,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/src/lib/gzca.jar!/org/apache/commons/httpclient/params/DefaultHttpParams.class" />
-    <entry file="jar://$PROJECT_DIR$/src/lib/gzca.jar!/org/apache/commons/httpclient/params/HostParams.class" />
-    <entry file="jar://$PROJECT_DIR$/src/lib/gzca.jar!/org/apache/commons/httpclient/HostConfiguration.class" />
-    <entry file="jar://$PROJECT_DIR$/src/lib/gzca.jar!/org/apache/commons/httpclient/HttpMethodBase.class" />
-    <entry file="jar://$PROJECT_DIR$/src/lib/gzca.jar!/org/apache/commons/logging/impl/Jdk14Logger.class" />
     <entry file="jar://$PROJECT_DIR$/src/lib/gzca.jar!/org/apache/commons/httpclient/HttpClient.class" />
     <entry file="jar://$PROJECT_DIR$/src/lib/gzca.jar!/com/gzca/CA.class" />
     <entry file="file://$PROJECT_DIR$/src/gzca/https/HttpClientUtil.java" />
@@ -1203,20 +1223,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/js/netonex/netone_zjq.js" />
     <entry file="file://$PROJECT_DIR$/web/assets/js/gzca/netonex_zjq.js" />
-    <entry file="file://$PROJECT_DIR$/web/assets/js/netonex/netonex.singleton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/js/netonex/netonex.base.src.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4712">
-          <caret line="282" column="4" lean-forward="false" selection-start-line="282" selection-start-column="4" selection-end-line="282" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_45/jre/lib/jsse.jar!/sun/security/ssl/SSLSessionImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -1307,14 +1313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gzca/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/src/lib/spark/spark-app-sdk-1.0.3.jar!/spark_connect_config.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1322,55 +1320,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SparkRedirectServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/assets/js/netonex/netonex.base.src.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="114">
+          <caret line="261" column="42" lean-forward="false" selection-start-line="261" selection-start-column="42" selection-end-line="261" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SendRedirectToSpark.java">
+    <entry file="file://$PROJECT_DIR$/web/assets/js/netonex/objectclass.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="15" column="76" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="76" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/js/gzca/logintest.js">
+    <entry file="file://$PROJECT_DIR$/web/assets/js/netonex/netonex.singleton.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="200" column="39" lean-forward="false" selection-start-line="200" selection-start-column="15" selection-end-line="200" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="285">
+          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/gzca/servlet/gzcaverifylogin/gzcaverifylogin.java">
+    <entry file="file://$PROJECT_DIR$/src/gzca/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="209">
+          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/testpage/logintest.html">
+    <entry file="file://$PROJECT_DIR$/web/1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="244" column="99" lean-forward="false" selection-start-line="244" selection-start-column="99" selection-end-line="244" selection-end-column="99" />
+        <state relative-caret-position="401">
+          <caret line="46" column="9" lean-forward="false" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        <state relative-caret-position="249">
+          <caret line="72" column="22" lean-forward="true" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gzca/servlet/gzcaverifylogin/gzcaverifylogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SendRedirectToSpark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="47" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="54" column="54" lean-forward="false" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/js/gzca/logintest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3458">
+          <caret line="182" column="3" lean-forward="false" selection-start-line="182" selection-start-column="3" selection-end-line="182" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/testpage/logintest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="73" selection-end-column="9" />
           <folding>
-            <marker date="1491199126349" expanded="true" signature="810:931" ph="..." />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="60" lean-forward="false" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SparkRedirectServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="49" column="47" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/testpage/SparkCallback.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
