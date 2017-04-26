@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="commons-beanutils-1.8.0">
+  <library name="spark">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/src/lib/spark/commons-beanutils-1.8.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/lib/spark/commons-codec-1.6.jar!/" />
@@ -15,12 +15,13 @@
       <root url="jar://$PROJECT_DIR$/src/lib/spark/jcee-common-base-1.0.3.7.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/lib/spark/jcee-common-impl-1.0.4.5.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/lib/spark/jcee-common-sdk-1.0.4.5.jar!/" />
-      <root url="jar://$PROJECT_DIR$/src/lib/spark/json-lib-2.4.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/lib/spark/json-lib-2.4-jdk15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/json-lib-2.4.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/lib/spark/log4j-1.2.17.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/lib/spark/pkix-1.51.0.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/lib/spark/prov-1.51.0.0.jar!/" />
       <root url="jar://$PROJECT_DIR$/src/lib/spark/spark-app-sdk-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/lib/spark/spark-platform-sdk-1.0.6.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

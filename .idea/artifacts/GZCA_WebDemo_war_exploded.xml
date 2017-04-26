@@ -8,14 +8,7 @@
           <element id="module-output" name="GZCA-WebDemo" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="commons-httpclient-3.0.1" />
-          <element id="library" level="project" name="gzca20160927" />
-          <element id="library" level="project" name="javabase64-1.3.1" />
-          <element id="library" level="project" name="servlet-api" />
-          <element id="library" level="project" name="commons-beanutils-1.8.0" />
-          <element id="library" level="project" name="commons-beanutils-1.8.01" />
-          <element id="library" level="project" name="spark-app-sdk-1.0.3" />
-          <element id="library" level="project" name="NetONEJ-1.0.0.2" />
+          <element id="library" level="project" name="spark" />
         </element>
       </element>
     </root>

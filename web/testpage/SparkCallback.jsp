@@ -73,7 +73,7 @@
     HttpSession Session = request.getSession();
     String accessToken = (String) Session.getAttribute("accessToken");
     String openID = (String) Session.getAttribute("openID");
-    String userExtensionBean = "not used";
+    String Oid_value =(String) Session.getAttribute("Oid_value");
 %>
 
 <div class="am-container" id="demo-view" data-backend-compiled="">
@@ -90,7 +90,7 @@
             </div>
             <div class="am-form-group">
                 <label for="extendID">用户扩展项</label>
-                <input type="email" class="" id="extendID" placeholder="获取应用扩展项" value="">
+                <input type="email" class="" id="extendID" placeholder="获取应用扩展项" value="<%=Oid_value%>">
             </div>
         </fieldset>
     </form>

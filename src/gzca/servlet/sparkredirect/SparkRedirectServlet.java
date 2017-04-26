@@ -5,17 +5,18 @@ import cn.com.syan.spark.app.sdk.connect.api.OpenID;
 import cn.com.syan.spark.app.sdk.connect.api.auth.UserExtension;
 import cn.com.syan.spark.app.sdk.connect.api.auth.UserInfo;
 import cn.com.syan.spark.app.sdk.connect.javabeans.AccessToken;
+import cn.com.syan.spark.app.sdk.connect.javabeans.auth.ExtensionOIDBean;
 import cn.com.syan.spark.app.sdk.connect.javabeans.auth.UserExtensionBean;
 import cn.com.syan.spark.app.sdk.connect.javabeans.auth.UserInfoBean;
 import cn.com.syan.spark.app.sdk.connect.oauth.Oauth;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by wuziqing on 2017-4-3.
@@ -49,6 +50,18 @@ public class SparkRedirectServlet extends HttpServlet {
             UserExtension userExtension = new UserExtension(accessToken,openid);
             UserExtensionBean userExtensionBean = userExtension.getUserExtension();
 
+            List<ExtensionOIDBean> lst = userExtensionBean.getExtensionOIDBeans();
+            System.out.println(lst.isEmpty());
+            System.out.println("扩展信息：" + lst.size());
+            String Oid_value= "";
+            for(ExtensionOIDBean bean:lst){
+                System.out.println("getMask====" + bean.getMask());
+                System.out.println("getName====" + bean.getName());
+                System.out.println("getValue====" + bean.getValue());
+                Oid_value = bean.getValue();
+                System.out.println("************************************************");
+            }
+            request.getSession().setAttribute("Oid_value",Oid_value);
             if(openid==null){
 
             }else {

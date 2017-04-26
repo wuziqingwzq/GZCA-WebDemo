@@ -5,6 +5,52 @@ function test() {
 function test2() {
 
 }
+//==========================================================================================================
+//Spark平台操作函数
+//推送证书到Spark平台
+function pushCert() {
+    var userName;
+    var userIdNo;
+    var userCert;
+    var userOid;
+    userName = $("#FriendlyName").val();
+    userIdNo = $("#user_id").val();
+    userCert = $("#cert_sign_value").val();
+    userOid = $("#OID_value").val();
+    $.ajax({
+        type: "post",//数据发送的方式（post 或者 get）
+        url: "/WebDemo/SendRedirectToSpark?type=pushCert",//要发送的后台地址
+        data: {userName: userName, userIdNo: userIdNo, userCert: userCert, userOid: userOid},//要发送的数据（参数）格式为{'val1':"1","val2":"2"}
+        dataType: "text",//后台处理后返回的数据格式
+        success: function (data) {//ajax请求成功后触发的方法
+            alert(data);
+        },
+        error: function (msg) {//ajax请求失败后触发的方法
+            alert("Push Error");
+        }
+    });
+}
+
+//证书更新函数
+function updateCert() {
+    var oldCert;
+    var newCert;
+    oldCert = $("#oldCert").val();
+    newCert = $("#newCert").val();
+    $.ajax({
+        type: "post",//数据发送的方式（post 或者 get）
+        url: "/WebDemo/SendRedirectToSpark?type=updateCert",
+        data: {oldCert: oldCert, newCert: newCert},
+        dataType: "text",
+        success: function (data) {//ajax请求成功后触发的方法
+            alert(data);
+        },
+        error: function (msg) {//ajax请求失败后触发的方法
+            alert("Update Error");
+        }
+    });
+}
+
 
 //==========================================================================================================
 //先安控件操作函数
@@ -24,15 +70,7 @@ function loadCertificate(colx) {
     }
     //crtx.DEBUG=1;
     fingerprint = crtx.ThumbprintSHA1;
-
-    var serial = crtx.SerialNumberHex;
-    $("#cert_sign_serial").val(serial);
-
-    var subject = crtx.Subject;
-    $("#cert_subject").val(subject);
-
-    var certValue = crtx.Content;
-    $("#cert_sign_value").val(certValue);
+    writeHtmlByCert(crtx);
     return crtx;
 }
 
@@ -101,13 +139,7 @@ function CreateCertByB64() {
     var colx = netonex.getCertificateCollectionX();
     var content = $("#cert_sign_value").val();
     var crtx = colx.CreateCertificateBase64(content);
-    $("#cert_sign_serial").val(crtx.SerialNumberHex);
-    $("#cert_subject").val(crtx.Subject);
-    $("#cert_sign_value").val(crtx.Content);
-    $("#user_id").val(getUserID(crtx));
-    $("#FriendlyName").val(getUserName(crtx));
-    $("#cert_NotBeforeSystemTime").val(gettime(crtx.NotBeforeSystemTime));
-    $("#cert_NotAfterSystemTime").val(gettime(crtx.NotAfterSystemTime));
+    writeHtmlByCert(crtx);
     return crtx;
 }
 
@@ -117,13 +149,7 @@ function CreateCertByFile() {
     var netonex = singleton.getNetOneX();
     var colx = netonex.getCertificateCollectionX();
     var crtx = colx.CreateCertificateFile("", "", "");
-    $("#cert_sign_serial").val(crtx.SerialNumberHex);
-    $("#cert_subject").val(crtx.Subject);
-    $("#cert_sign_value").val(crtx.Content);
-    $("#user_id").val(getUserID(crtx));
-    $("#FriendlyName").val(getUserName(crtx));
-    $("#cert_NotBeforeSystemTime").val(gettime(crtx.NotBeforeSystemTime));
-    $("#cert_NotAfterSystemTime").val(gettime(crtx.NotAfterSystemTime));
+    writeHtmlByCert(crtx);
     return crtx;
 }
 
@@ -180,10 +206,19 @@ function doSHA1(str) {
 $(document).ready(function () {
     $("#do-not-say-1").collapse('close');
     var namevalue;
-    namevalue=$("input[name='tabsSelect']").attr("value");
-    alert($.session.get("accessToken"));
-    alert("标签参数值："+ namevalue);
+    namevalue = $("input[name='tabsSelect']").attr("value");
 });
+
+//通过证书文件写入到页面,将页面参数与JS代码分离
+function writeHtmlByCert(crtx) {
+    $("#cert_sign_serial").val(crtx.SerialNumberHex);
+    $("#cert_subject").val(crtx.Subject);
+    $("#cert_sign_value").val(crtx.Content);
+    $("#user_id").val(getUserID(crtx));
+    $("#FriendlyName").val(getUserName(crtx));
+    $("#cert_NotBeforeSystemTime").val(gettime(crtx.NotBeforeSystemTime));
+    $("#cert_NotAfterSystemTime").val(gettime(crtx.NotAfterSystemTime));
+}
 
 /**
  * 设置页面打开某个标签
@@ -193,9 +228,10 @@ $(document).ready(function () {
 function setTabsState(TabsID, tabIndex) {
     var tabnum;
     tabIndex > 0 ? tabnum = tabIndex - 1 : tabnum = 0;
-    $("#"+TabsID).tabs("open", tabnum);
+    $("#" + TabsID).tabs("open", tabnum);
 }
 
+//后台交互部分js=======================================================================================================
 //页面与后台交互Ajax函数
 function sendVerify(url, parameter) {
     //原生AJAX传递参数，参考代码
@@ -219,7 +255,6 @@ function sendVerify(url, parameter) {
     xmlhttp.open(METHOD, URL);
     xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
     xmlhttp.send(parameter);
-    // xmlhttp.send("cert_sign_serial=1231231231231231");
 
     //Ajax状态改变函数
     xmlhttp.onreadystatechange = function () {
@@ -228,7 +263,6 @@ function sendVerify(url, parameter) {
         }
         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             changemessage(xmlhttp.responseText, "success");
-//                    document.getElementById("serverResult").innerHTML = xmlhttp.responseText;
         }
     }
 
