@@ -1,9 +1,10 @@
 package gzca.test;
 
 
-import cn.com.syan.spark.app.sdk.classified.SparkClient;
-import cn.com.syan.spark.app.sdk.classified.SparkClients;
-import cn.com.syan.spark.app.sdk.classified.entity.Response;
+import com.syan.netonej.exception.NetonejExcepption;
+import com.syan.netonej.http.client.PCSClient;
+import com.syan.netonej.http.client.SVSClient;
+import com.syan.netonej.http.client.TSAClient;
 
 import java.io.IOException;
 import java.security.SignatureException;
@@ -15,50 +16,97 @@ import java.security.spec.InvalidKeySpecException;
  */
 public class Test {
     public static void main(String arg[]) throws CertificateException, InvalidKeySpecException, IOException, SignatureException {
-        Test.pushdata();
+        SVSClient svsClient = new SVSClient();
+        TSAClient tsaClient = new TSAClient();
+        PCSClient pcsClient = new PCSClient();
+        tsaClient.initClient("111.85.176.62", "9198");
+        pcsClient.initClient("111.85.176.62", "9178");
+        String cert = "MIIDXTCCAkWgAwIBAgIPBwAFIBQQMREAAAAAAHGYMA0GCSqGSIb3DQEBBQUAME8xCzAJBgNVBAYTAkNOMTEwLwYDVQQKDChHVUlaSE9VIEVMRUNUUk9OSUMgQ0VSVElGSUNBVEVTIENPLixMVEQuMQ0wCwYDVQQDDARHWkNBMB4XDTE0MTAzMDE2MDAwMFoXDTE5MTAzMDE2MDAwMFowdTELMAkGA1UEBhMCQ04xEjAQBgNVBAgMCei0teW3nuecgTESMBAGA1UEBwwJ6LS16Ziz5biCMSowKAYDVQQKDCHotLXlt57nnIHnlLXlrZDor4HkuabmnInpmZDlhazlj7gxEjAQBgNVBAMMCeWQtOWtkOa4hTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAn2pbx+UGZos35bnj4+ztXFcznluHews9x3iFsvXcKJ+6DYkC7bykm2CumIXscr7g28+F3tX3VAzCjFWumcU9M9GbW7Tvg8HBex/8ab61E0vWJo8gjBkQnBB60a5xbaJ2aIpSQQ6dApIc2Ain1mS/lwZhGRdkaoOnX24Zh6NWSosCAwEAAaOBkzCBkDAfBgNVHSMEGDAWgBTFU3ElMj8KAnNe2vTGVm153XVGYTAdBgNVHQ4EFgQUARIRFjKlS9okNLfGakgPL32qrnEwCwYDVR0PBAQDAgbAMCIGCCqBHNAUBAEBBBYxFIASNTIyMTAxMTk5MjA0MjEwNDEwMB0GBSpWFQEDBBQMEjAzOTExMjAxNDEwMzEzMTc3MDANBgkqhkiG9w0BAQUFAAOCAQEAEEv6DcZReMCZQsNUhKF/WgR9etHW7pP40jCNnST9vO6Ym3nMDVv00Qcd+bLQWlc/J6OFxJKZuZXS1ksveThydjxYbHPulD2+gAIpSMEhMHYlGSPKXcD42952Lmpwe4w7dktvWh686ucRvApM4UXCehZzJtnXIMuYAbz+HiGdk82Cp32yFZmQgnu2+GNTprJobwa7cMarFDb3kgUPUQJGMxWJUNWQ2ciUAlG8xmaPSQ/pspWlKJNKTqgWfswbjTcHiGXCIQPu786v6KYQ7MUJqiVssHIxkow1EV5CukMRRgYJAdakJyfUqLqOw+JQOcb95346T8CVOQqTnhwytuA3zA==";
+        String data = "test value";
+        String datab64 = "dGVzdCB2YWx1ZQ==";
+        String signture = "Sn5tN94/MGBNRZASRE+Lfj2J725qQIhP9DBv7R6Kkl/2Eu2+cD9BMZ69HQgZVPLxENjf0ayGClI21mt0D7XVKcMsbWy3Z3DpOBjMMTCUnq+NJQHd2uVDXL802/rPDnmf++ARkRtLTYcBouTnm6lAdhDomJ3Q42VLUmChfu5AghI=";
+        String tsaTimestamp = "MIIEoTADAgEAMIIEmAYKKoEcz1UGAQQCAqCCBIgwggSEAgEDMQ4wDAYIKoEcz1UBg3UFADCBzgYLKoZIhvcNAQkQAQSggb4EgbswgbgCAQEGBCoDBAEwITAJBgUrDgMCGgUABBTVbHU+D4zoS6PTqyhGKM9llP2qdAIJAJ9BJ0FHmXDRGA8yMDE3MDQyNzAxMTgwN1oCCQCdE05+iL/3+qBjpGEwXzELMAkGA1UEBhMCQ04xDzANBgNVBAgeBo01Xd53ATEPMA0GA1UEBx4GjTWWM14CMQ0wCwYDVQQKEwRHWkNBMQwwCgYDVQQLEwNKU0IxETAPBgNVBAMTCEdaQ0EtSlNCoIICHjCCAhowggHAoAMCAQICDQCnzXcRmRvKQrbzGXAwCgYIKoEcz1UBg3UwXzELMAkGA1UEBhMCQ04xDzANBgNVBAgeBo01Xd53ATEPMA0GA1UEBx4GjTWWM14CMQ0wCwYDVQQKEwRHWkNBMQwwCgYDVQQLEwNKU0IxETAPBgNVBAMTCEdaQ0EtSlNCMCIYDzIwMTcwNDIxMTYwMDAwWhgPMjAyNzA0MTkxNjAwMDBaMF8xCzAJBgNVBAYTAkNOMQ8wDQYDVQQIHgaNNV3edwExDzANBgNVBAceBo01ljNeAjENMAsGA1UEChMER1pDQTEMMAoGA1UECxMDSlNCMREwDwYDVQQDEwhHWkNBLUpTQjBZMBMGByqGSM49AgEGCCqBHM9VAYItA0IABOoUiMQkg2dV0mVrnvnygEGzULrv/AZXDY7GYBkIJqvnxyIdHsBP6b60SSGDVzzYvhJvficc4ka6QcVbn75N1eCjXTBbMAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFO4mZxUiHxkHBTbIxfFY0cgut/LyMB8GA1UdIwQYMBaAFO4mZxUiHxkHBTbIxfFY0cgut/LyMAsGA1UdDwQEAwIBhjAKBggqgRzPVQGDdQNIADBFAiEAia0E6/pBXpVByu0hQ5IPqDK8VanCPngwhdfYTxqdD0sCIATbzX/OLXR5ddVnJBrprFWZOSjLpOoYzN4Glc7qufcnMYIBejCCAXYCAQEwcDBfMQswCQYDVQQGEwJDTjEPMA0GA1UECB4GjTVd3ncBMQ8wDQYDVQQHHgaNNZYzXgIxDTALBgNVBAoTBEdaQ0ExDDAKBgNVBAsTA0pTQjERMA8GA1UEAxMIR1pDQS1KU0ICDQCnzXcRmRvKQrbzGXAwDAYIKoEcz1UBg3UFAKCBmDAaBgkqhkiG9w0BCQMxDQYLKoZIhvcNAQkQAQQwHAYJKoZIhvcNAQkFMQ8XDTE3MDQyNzAxMTgwN1owKwYLKoZIhvcNAQkQAgwxHDAaMBgwFgQU+2ny0Ska2dAzGcd8bGsbWUlIAk8wLwYJKoZIhvcNAQkEMSIEIHFHIAEgHN8IXKKmLMO+VzVYikW8f9KpCziIuZkl98jnMA0GCSqBHM9VAYItAQUABEcwRQIgZplSs6cAq39qDzoBHOUI92Xzr5+gTLG8/Iia3g4JpwACIQCDkYsLahJCXBY3EEMpvxRuZCSWM7CQOVU77Ir8I/RSeA==";
+        String type = "2";
+
+
+        switch (type) {
+            case "0": {
+                try {
+                    int result;
+                    System.out.println(cert);
+                    svsClient.initClient("111.85.176.62", "9188");
+                    result = svsClient.verifyCertificate(cert);
+                    if (result == 200) {
+                        System.out.println(result + ":验签成功");
+                    } else {
+                        System.out.println("验签失败");
+                    }
+                } catch (NetonejExcepption netonejExcepption) {
+                    System.out.println("验签错误");
+                    netonejExcepption.printStackTrace();
+                }
+                break;
+            }
+            case "1": {
+                int result;
+                try {
+                    svsClient.initClient("111.85.176.62", "9188");
+                    result = svsClient.verifyPKCS1(data, signture, cert);
+                    if (result == 200) {
+                        System.out.println("验签成功：" + result);
+                    } else {
+                        System.out.println("验签失败：" + result);
+                    }
+                } catch (NetonejExcepption netonejExcepption) {
+                    System.out.println("验签错误");
+                    netonejExcepption.printStackTrace();
+                }
+                break;
+            }
+            case "2": {
+                try {
+                    String tsaResult = tsaClient.createTimestamp(data, "sha1");
+                    if (tsaResult != null) {
+                        System.out.println("时间戳请求成功：");
+                        System.out.println(tsaResult);
+                    } else {
+                        System.out.println("时间戳请求失败");
+                    }
+                } catch (NetonejExcepption netonejExcepption) {
+                    System.out.println("时间戳请求错误");
+                    netonejExcepption.printStackTrace();
+                }
+                tsaClient.releaseClient();
+                break;
+            }
+            case "3": {
+                try {
+                    System.out.println(tsaClient.verifyTimestamp(tsaTimestamp));
+                } catch (NetonejExcepption netonejExcepption) {
+                    System.out.println("验签错误");
+                    netonejExcepption.printStackTrace();
+                }
+                tsaClient.releaseClient();
+                break;
+            }
+            case "4": {
+                try {
+                    String certList[] = pcsClient.getPcsIds();
+                    for (int i = 0; i < certList.length; i++) {
+                        System.out.println(certList[i]);
+                    }
+                    String encryptData = pcsClient.pubKeyEncrypt(certList[0],"123456","kid",data);
+                    System.out.println(encryptData);
+                    System.out.println(pcsClient.priKeyDecrypt(certList[0],"123456","kid",encryptData));
+                } catch (NetonejExcepption netonejExcepption) {
+                    netonejExcepption.printStackTrace();
+                }
+                break;
+            }
+        }
     }
 
     public static void pushdata() throws CertificateException, InvalidKeySpecException, SignatureException, IOException {
-//        SparkClient sparkClient = SparkClients.getDefaultClient();
-//        //查询权限组
-//        Response rs = sparkClient.queryGroup();
-//        System.out.println("testQueryGroup>"+rs.getMsg()+ rs.getData());
-//        System.out.println("-------------------------------------------------");
-//
-
-        //组用户查询
-//        String     certificate="";
-//        certificate  ="MIID0TCCA3WgAwIBAgIPBwAFIBcEIREAAAAAFgKYMAwGCCqBHM9VAYN1BQAwgYYxCzAJBgNVBAYTAkNOMQ8wDQYDVQQIDAbotLXlt54xDzANBgNVBAcMBui0temYszEqMCgGA1UECgwh6LS15bee55yB55S15a2Q6K+B5Lmm5pyJ6ZmQ5YWs5Y+4MRIwEAYDVQQLDAnov5DokKXpg6gxFTATBgNVBAMMDEdaQ0FPUEVSUk9PVDAeFw0xNzA0MjAxNjAwMDBaFw0xODA0MjAxNjAwMDBaMIGNMQswCQYDVQQGEwJDTjESMBAGA1UECAwJ6LS15bee55yBMRIwEAYDVQQHDAnotLXpmLPluIIxIDAeBgNVBAoMF+i0teW3nkNB5rWL6K+V6K+B5LmmU00yMRIwEAYDVQQLDAnlkLTlrZDmuIUxIDAeBgNVBAMMF+i0teW3nkNB5rWL6K+V6K+B5LmmU00yMFkwEwYHKoZIzj0CAQYIKoEcz1UBgi0DQgAELLBsH6IKnVECikni/Vh8QDWTebbS9Dors2ToJcgo4m+AQ24AfZuV2DoS7PrqZUXgoV1JsBaI5AUp6xRgjEL7YqOCAbkwggG1MB8GA1UdIwQYMBaAFO70/TLhGRiTSghuZIVHUstDcGoVMB0GA1UdDgQWBBStweCT/lrFSRIeDmriXYStZJpnnzBYBgNVHSAEUTBPME0GCyqBHIbwFAICAQEBMD4wPAYIKwYBBQUHAgEWMGh0dHBzOi8vd3d3Lmd6Y2EuY2MvZG93bi9DUFMvR1pDQSUyMENQU19WMS4yLnBkZjALBgNVHQ8EBAMCBsAwTgYDVR0fBEcwRTBDoEGgP4Y9aHR0cDovL2NybC5nemNhLmNjOjgwODAvR1pDQURvd25sb2FkQ2VudGVyL2Rvd25sb2FkU20yQ3JsLmpzcDCBggYIKwYBBQUHAQEEdjB0MDYGCCsGAQUFBzABhipodHRwOi8vb2NzcC5nemNhLmNjOjgwMTMvb2NzcC9vY3NwY2dpYy5jZ2kwOgYIKwYBBQUHMAKGLmh0dHBzOi8vd3d3Lmd6Y2EuY2MvZG93bi9jZXJ0L0daQ0FPUEVSUk9PVC5jZXIwGAYIKoEc0BQEAQQEDBMKMDAwMDAwMDAtMTAdBgUqVhUBAwQUDBIwMzkyMDIwMTcwNDIxNDkwNTgwDAYIKoEcz1UBg3UFAANIADBFAiEA16BSc1C5ewN/HOKnNvCX8Dc50ztWRYaP95TDHTcVi5wCIEAxAQ2e3+YtENC4UckZQ3c45uDpi1iv3P9CG+I0QPbT";
-//        /****
-//         * 以上是测试代码获取证书base64编码字符串
-//         * 以下代码为调用接口示例代码
-//         */
-//        SparkClient sc=SparkClients.getDefaultClient();
-//        User user=new User();
-//        X509Certificate x=  CertificateConverter.fromBase64(certificate);
-//        user.setCertificate(certificate);
-////        user.setCertificate(CertificateConverter.toBase64String(x));
-//        user.setName("贵州CA测试证书SM2");       //设置用户名称 或者单位名称     如果不设置 系统为默认使用证书CN项作为名称
-//        user.setIdno("00000000-1");               //证件号
-////        user.setPhone("18285107141");        //联系电话
-//        List<Oid> oidList=new ArrayList<Oid>();
-//        Oid oid=new Oid();
-//        oid.setOidMask("Test_Group_OID");             //组扩展 标识
-//        oid.setOidValue("TEST1");           //组上扩展值
-//        oidList.add(oid);
-//        /**
-//         * 如果应用组没有oid扩展  oidList 可以为null
-//         * 如   sc.joinGroup(user,1,null);
-//         */
-//        Response r= sc.joinGroup(user,1,oidList);
-//        System.out.println("testJoinGroup>"+ r.getRet() +r.getMsg());
-//
-        String newCertificate= "MIID0TCCA3WgAwIBAgIPBwAFIBcEIREAAAAAFgKYMAwGCCqBHM9VAYN1BQAwgYYxCzAJBgNVBAYTAkNOMQ8wDQYDVQQIDAbotLXlt54xDzANBgNVBAcMBui0temYszEqMCgGA1UECgwh6LS15bee55yB55S15a2Q6K+B5Lmm5pyJ6ZmQ5YWs5Y+4MRIwEAYDVQQLDAnov5DokKXpg6gxFTATBgNVBAMMDEdaQ0FPUEVSUk9PVDAeFw0xNzA0MjAxNjAwMDBaFw0xODA0MjAxNjAwMDBaMIGNMQswCQYDVQQGEwJDTjESMBAGA1UECAwJ6LS15bee55yBMRIwEAYDVQQHDAnotLXpmLPluIIxIDAeBgNVBAoMF+i0teW3nkNB5rWL6K+V6K+B5LmmU00yMRIwEAYDVQQLDAnlkLTlrZDmuIUxIDAeBgNVBAMMF+i0teW3nkNB5rWL6K+V6K+B5LmmU00yMFkwEwYHKoZIzj0CAQYIKoEcz1UBgi0DQgAELLBsH6IKnVECikni/Vh8QDWTebbS9Dors2ToJcgo4m+AQ24AfZuV2DoS7PrqZUXgoV1JsBaI5AUp6xRgjEL7YqOCAbkwggG1MB8GA1UdIwQYMBaAFO70/TLhGRiTSghuZIVHUstDcGoVMB0GA1UdDgQWBBStweCT/lrFSRIeDmriXYStZJpnnzBYBgNVHSAEUTBPME0GCyqBHIbwFAICAQEBMD4wPAYIKwYBBQUHAgEWMGh0dHBzOi8vd3d3Lmd6Y2EuY2MvZG93bi9DUFMvR1pDQSUyMENQU19WMS4yLnBkZjALBgNVHQ8EBAMCBsAwTgYDVR0fBEcwRTBDoEGgP4Y9aHR0cDovL2NybC5nemNhLmNjOjgwODAvR1pDQURvd25sb2FkQ2VudGVyL2Rvd25sb2FkU20yQ3JsLmpzcDCBggYIKwYBBQUHAQEEdjB0MDYGCCsGAQUFBzABhipodHRwOi8vb2NzcC5nemNhLmNjOjgwMTMvb2NzcC9vY3NwY2dpYy5jZ2kwOgYIKwYBBQUHMAKGLmh0dHBzOi8vd3d3Lmd6Y2EuY2MvZG93bi9jZXJ0L0daQ0FPUEVSUk9PVC5jZXIwGAYIKoEc0BQEAQQEDBMKMDAwMDAwMDAtMTAdBgUqVhUBAwQUDBIwMzkyMDIwMTcwNDIxNDkwNTgwDAYIKoEcz1UBg3UFAANIADBFAiEA16BSc1C5ewN/HOKnNvCX8Dc50ztWRYaP95TDHTcVi5wCIEAxAQ2e3+YtENC4UckZQ3c45uDpi1iv3P9CG+I0QPbT";
-        String oldCertificate=  "MIIDgTCCAmmgAwIBAgIPBwAFIBcCJQEAAAAAFDRWMA0GCSqGSIb3DQEBBQUAME8xCzAJBgNVBAYTAkNOMTEwLwYDVQQKDChHVUlaSE9VIEVMRUNUUk9OSUMgQ0VSVElGSUNBVEVTIENPLixMVEQuMQ0wCwYDVQQDDARHWkNBMB4XDTE3MDIyNDE2MDAwMFoXDTIwMDQwNTE2MDAwMFowgaUxCzAJBgNVBAYTAkNOMRIwEAYDVQQIDAnotLXlt57nnIExEjAQBgNVBAcMCei0temYs+W4gjEtMCsGA1UECgwk55yB5Lit5b+DZ3pjYeWQjOaZuuS8n+S4mnJzYea1i+ivlTIzMRAwDgYDVQQLDAfms5XkuroyMS0wKwYDVQQDDCTnnIHkuK3lv4NnemNh5ZCM5pm65Lyf5LiacnNh5rWL6K+VMjMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOvdpYcF3rk8jyomJB6+A4F51sMCFwUQqoqbCw9KbuDEljDiby+SPtXubgazoOjzG2Pa68xd5M3sb1MQ1OhTYKnl6lNVcGjpsZZJEmYf6qeO1C2A77nCRj/6WgM48R5ZQRyjWQNH/ha+HyXpdd67MGTEqU851iXaf/yu2BviUqBtAgMBAAGjgYYwgYMwHwYDVR0jBBgwFoAUxVNxJTI/CgJzXtr0xlZted11RmEwHQYDVR0OBBYEFH2jkl50v54szRSz3ZFYNqMMkmsTMAsGA1UdDwQEAwIGwDAVBggqgRzQFAQBBAQJEwc0MzI1MzQ1MB0GBSpWFQEDBBQMEjAzOTIwMjAxNjA0MDYyNTkwNTANBgkqhkiG9w0BAQUFAAOCAQEAOBuAeg73b8qzzw/iREGCJ+J5aRTD1snR4isPO9RUUjBqnI0Hwth51lLSzxmirL+pS5RDDFUI8I3wASzzWLitXOfw2wSU/3fSZpjc111nZyC8rpxf/gMmMGNUaO53h+AE27gPQcJJ5FM8ROlta/bKBbU3m4GmYWPwPQo5Sg1SwxioyKo1d1x1snFdlmrQ+0NhqutBzNmmq69rukg8JzMkhs/oWX1VRMv4w7C2iVh/X4kD2icxYzrrgvklTWd6Db6GZs4/ELmFTfWdVvOHunkUAOGRye0m8czeukgTFZj26F8CKZRMowiE7o9zEWn42vvAxqckQKi8y2BP6KOc+RX1nw==";
-        SparkClient sc= SparkClients.getDefaultClient();
-        Response r= sc.updateCertificate(oldCertificate,newCertificate);
-        System.out.println("testUpdateCertificate>"+ r.getRet()+r.getMsg());
-
 
 
     }

@@ -6,6 +6,128 @@ function test2() {
 
 }
 //==========================================================================================================
+//先安网关操作函数
+function verifyCertByNetOne() {
+    var NetOne_certB64 = $("#NetOne_certB64").val();
+    $.ajax({
+        type: "post",
+        url: "../netoneTest?type=verifycert",
+        data: {NetOne_certB64: NetOne_certB64},
+        dataType: "text",
+        success: function (data) {
+            alert(data);
+        },
+        error: function () {
+            alert("verify Error");
+        }
+    });
+}
+
+function verifySignatureByNetOne() {
+    var NetOne_certB64 = $("#NetOne_certB64").val();
+    var netOneData = $("#netOneData").val();
+    var netOneValue = $("#netOneValue").val();
+    $.ajax({
+        type: "post",
+        url: "../netoneTest?type=verifySignatureByNetOne",
+        data: {NetOne_certB64: NetOne_certB64, netOneData: netOneData, netOneValue: netOneValue},
+        dataType: "text",
+        success: function (data) {
+            alert(data);
+        },
+        error: function () {
+            alert("verify Error");
+        }
+    });
+}
+
+function timeStampByNetOne() {
+    var netOneData = $("#netOneData").val();
+    var netOneValue;
+    $.ajax({
+        type: "post",
+        url: "../netoneTest?type=timeStampByNetOne",
+        data: {netOneData: netOneData},
+        dataType: "text",
+        success: function (data) {
+            if (data == "error") {
+                alert("request failed");
+                netOneData = "";
+            } else {
+                netOneValue = data;
+                alert("request ok");
+                $("#netOneValue").val(netOneValue);
+            }
+        },
+        error: function () {
+            alert("request Error");
+        }
+    });
+}
+
+function verifyTimeStamp() {
+    var netOneData = $("#netOneData").val();
+    var netOneValue = $("#netOneValue").val();
+    $.ajax({
+        type: "post",
+        url: "../netoneTest?type=verifyTimeStamp",
+        data: {netOneData: netOneData, netOneValue: netOneValue},
+        dataType: "text",
+        success: function (data) {
+            if(data=="error"){
+                alert("verify failed")
+            }else {
+                alert(data);
+            }
+        },
+        error: function () {
+            alert("verify Error");
+        }
+    });
+}
+
+function pubKeyEncrypt() {
+    var netOneData = $("#netOneData").val();
+    $.ajax({
+        type: "post",
+        url: "../netoneTest?type=pubKeyEncrypt",
+        data: {netOneData: netOneData},
+        dataType: "text",
+        success: function (data) {
+            if(data=="error"){
+                alert("request failed")
+            }else {
+                $("#netOneValue").val(data);
+            }
+        },
+        error: function () {
+            alert("request Error");
+        }
+    });
+}
+
+function priKeyDecrypt() {
+    var netOneValue = $("#netOneValue").val();
+    $.ajax({
+        type: "post",
+        url: "../netoneTest?type=priKeyDecrypt",
+        data: {netOneValue: netOneValue},
+        dataType: "text",
+        success: function (data) {
+            if(data=="error"){
+                alert("decrypt failed");
+            }else {
+                $("#netOneValue").val(data);
+                alert("decrypt success");
+            }
+        },
+        error: function () {
+            alert("decrypt Error");
+        }
+    });
+}
+
+//==========================================================================================================
 //Spark平台操作函数
 //推送证书到Spark平台
 function pushCert() {
@@ -19,7 +141,7 @@ function pushCert() {
     userOid = $("#OID_value").val();
     $.ajax({
         type: "post",//数据发送的方式（post 或者 get）
-        url: "/WebDemo/SendRedirectToSpark?type=pushCert",//要发送的后台地址
+        url: "../SendRedirectToSpark?type=pushCert",//要发送的后台地址
         data: {userName: userName, userIdNo: userIdNo, userCert: userCert, userOid: userOid},//要发送的数据（参数）格式为{'val1':"1","val2":"2"}
         dataType: "text",//后台处理后返回的数据格式
         success: function (data) {//ajax请求成功后触发的方法
@@ -39,7 +161,7 @@ function updateCert() {
     newCert = $("#newCert").val();
     $.ajax({
         type: "post",//数据发送的方式（post 或者 get）
-        url: "/WebDemo/SendRedirectToSpark?type=updateCert",
+        url: "../SendRedirectToSpark?type=updateCert",
         data: {oldCert: oldCert, newCert: newCert},
         dataType: "text",
         success: function (data) {//ajax请求成功后触发的方法
@@ -106,11 +228,13 @@ function pkcs1(sign) {
         crtx.Quiet = 1;
         //获取签名原文、和证书B64
         var data = $("#data").val();
+        var datab64 = b64x.EncodeString(data);
         var certValue = crtx.Content;
         //获取签名值
         var signature = crtx.PKCS1String(data);
         //回显文本框中的数据
         $("#cert_sign_value").val(certValue);
+        $("#dataB64").val(datab64);
         $("#signature").val(signature);
         $("#cert_sign_serial").val(crtx.SerialNumberHex);
         $("#cert_subject").val(crtx.Subject);

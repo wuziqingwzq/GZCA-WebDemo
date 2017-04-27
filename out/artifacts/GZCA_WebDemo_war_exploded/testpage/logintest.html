@@ -78,7 +78,7 @@
     <div data-am-widget="tabs" id="logintest-main-tabs" data-am-tabs="{noSwipe:1}" class="am-tabs am-tabs-d2">
         <ul class="am-tabs-nav am-cf">
             <li id="tabs1" class="am-active"><a href="[data-tab-panel-0]">Certificate</a></li>
-            <li id="tabs2" class=""><a href="[data-tab-panel-1]">GZCA Verify</a></li>
+            <li id="tabs2" class=""><a href="[data-tab-panel-1]">NetONE API</a></li>
             <li id="tabs3" class=""><a href="[data-tab-panel-2]">Spark</a></li>
         </ul>
         <div class="am-tabs-bd">
@@ -102,7 +102,6 @@
                     </div>
                     <div id="divlog">
                     </div>
-
                     <!--证书信息表单-->
                     <form class="am-form" name="certform" method="post" action="">
                         <fieldset>
@@ -223,6 +222,10 @@
                                 <input type="text" id="data" rows="1" value="test value"/>
                             </div>
                             <div class="am-form-group am-input-group">
+                                <label class="am-input-group-label" for="data">原文B64</label>
+                                <input type="text" id="dataB64" rows="1" value="test value"/>
+                            </div>
+                            <div class="am-form-group am-input-group">
                                 <label class="am-input-group-label" for="signature">操作结果</label>
                                 <input type="text" id="signature" rows="1"/>
                             </div>
@@ -231,8 +234,49 @@
                 </div>
             </div>
             <div data-tab-panel-1="" class="am-tab-panel">
-                <!--备注：用户证书管理系统接口测试-->
+                <!--备注：先安网关功能测试-->
+                <!--功能按钮组-->
 
+                <!--数据展示框-->
+                <form class="am-form" name="sparkform" method="post" action="">
+                    <fieldset>
+                        <legend>网关测试</legend>
+                        <div class="am-btn-toolbar">
+                            <div class="am-btn-group">
+                                <button type="button" class="am-btn am-btn-secondary am-round"
+                                        onclick="verifyCertByNetOne()">验证证书
+                                </button>
+                                <button type="button" class="am-btn am-btn-secondary am-round"
+                                        onclick="verifySignatureByNetOne()">验证签名
+                                </button>
+                                <button type="button" class="am-btn am-btn-secondary am-round" onclick="timeStampByNetOne()">
+                                    请求时间戳
+                                </button>
+                                <button type="button" class="am-btn am-btn-secondary am-round" onclick="verifyTimeStamp()">
+                                    验证时间戳
+                                </button>
+                                <button type="button" class="am-btn am-btn-secondary am-round" onclick="pubKeyEncrypt()">
+                                    服务器加密
+                                </button>
+                                <button type="button" class="am-btn am-btn-secondary am-round" onclick="priKeyDecrypt()">
+                                    服务器解密
+                                </button>
+                            </div>
+                        </div>
+                        <div class="am-form-group">
+                            <label for="NetOne_certB64">证书B64</label>
+                            <input type="text" id="NetOne_certB64" class="" placeholder="">
+                        </div>
+                        <div class="am-form-group">
+                            <label for="netOneData">原文</label>
+                            <input type="text" id="netOneData" class="" placeholder="">
+                        </div>
+                        <div class="am-form-group">
+                            <label for="netOneValue">结果</label>
+                            <input type="text" id="netOneValue" class="" placeholder="">
+                        </div>
+                    </fieldset>
+                </form>
             </div>
             <div data-tab-panel-2="" class="am-tab-panel">
                 <!--Spark统一认证平台接口测试-->
@@ -247,7 +291,8 @@
                                 </button>
                                 <button type="button" class="am-btn am-btn-secondary am-round" onclick="pushCert()">证书推送
                                 </button>
-                                <button type="button" class="am-btn am-btn-secondary am-round" onclick="updateCert()">证书更新
+                                <button type="button" class="am-btn am-btn-secondary am-round" onclick="updateCert()">
+                                    证书更新
                                 </button>
                             </div>
                         </div>
@@ -259,12 +304,12 @@
                                     <input type="text" class="" id="OID_value" placeholder="设置应用组扩展项OID">
                                 </div>
                                 <div class="am-form-group">
-                                <label for="oldCert">旧证书B64</label>
-                                <input type="text" class="" id="oldCert" placeholder="旧证书">
+                                    <label for="oldCert">旧证书B64</label>
+                                    <input type="text" class="" id="oldCert" placeholder="旧证书">
                                 </div>
                                 <div class="am-form-group">
-                                <label for="newCert">新证书B64</label>
-                                <input type="text" class="" id="newCert" placeholder="新证书">
+                                    <label for="newCert">新证书B64</label>
+                                    <input type="text" class="" id="newCert" placeholder="新证书">
                                 </div>
                             </fieldset>
                         </div>
