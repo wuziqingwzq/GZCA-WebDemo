@@ -8,8 +8,8 @@
           <element id="module-output" name="GZCA-WebDemo" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="lib" />
           <element id="library" level="project" name="spark" />
+          <element id="library" level="project" name="lib" />
         </element>
       </element>
     </root>
