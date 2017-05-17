@@ -15,6 +15,7 @@ import java.io.PrintWriter;
 public class gzcaverifylogin extends javax.servlet.http.HttpServlet {
     protected void doPost(javax.servlet.http.HttpServletRequest request, javax.servlet.http.HttpServletResponse response) throws javax.servlet.ServletException, IOException {
         //初始化连接参数
+
         String type = request.getParameter("type");
         String gzcaverifyURL = "https://58.42.231.108:5001";
         String app_name = "Test_W";
@@ -37,7 +38,10 @@ public class gzcaverifylogin extends javax.servlet.http.HttpServlet {
             data = request.getParameter("data");
             String signature = "";
             signature = request.getParameter("signature");
+            signature = signature.replace(" ","+");
             result = ca.VerifySignedData(cert_serial, data, signature);
+            System.out.println("签名原文：" + data);
+            System.out.println("签名结果：" + signature);
         }
 
         //返回用户证书管理系统响应

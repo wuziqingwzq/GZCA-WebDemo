@@ -6,6 +6,7 @@ import cn.com.syan.spark.app.sdk.classified.SparkClients;
 import cn.com.syan.spark.app.sdk.classified.entity.Oid;
 import cn.com.syan.spark.app.sdk.classified.entity.Response;
 import cn.com.syan.spark.app.sdk.classified.entity.User;
+import com.gzca.CA;
 import com.syan.netonej.exception.NetonejExcepption;
 import com.syan.netonej.http.client.PCSClient;
 import com.syan.netonej.http.client.SVSClient;
@@ -33,7 +34,7 @@ public class Test {
         String datab64 = "dGVzdCB2YWx1ZQ==";
         String signture = "Sn5tN94/MGBNRZASRE+Lfj2J725qQIhP9DBv7R6Kkl/2Eu2+cD9BMZ69HQgZVPLxENjf0ayGClI21mt0D7XVKcMsbWy3Z3DpOBjMMTCUnq+NJQHd2uVDXL802/rPDnmf++ARkRtLTYcBouTnm6lAdhDomJ3Q42VLUmChfu5AghI=";
         String tsaTimestamp = "MIIEoTADAgEAMIIEmAYKKoEcz1UGAQQCAqCCBIgwggSEAgEDMQ4wDAYIKoEcz1UBg3UFADCBzgYLKoZIhvcNAQkQAQSggb4EgbswgbgCAQEGBCoDBAEwITAJBgUrDgMCGgUABBTVbHU+D4zoS6PTqyhGKM9llP2qdAIJAJ9BJ0FHmXDRGA8yMDE3MDQyNzAxMTgwN1oCCQCdE05+iL/3+qBjpGEwXzELMAkGA1UEBhMCQ04xDzANBgNVBAgeBo01Xd53ATEPMA0GA1UEBx4GjTWWM14CMQ0wCwYDVQQKEwRHWkNBMQwwCgYDVQQLEwNKU0IxETAPBgNVBAMTCEdaQ0EtSlNCoIICHjCCAhowggHAoAMCAQICDQCnzXcRmRvKQrbzGXAwCgYIKoEcz1UBg3UwXzELMAkGA1UEBhMCQ04xDzANBgNVBAgeBo01Xd53ATEPMA0GA1UEBx4GjTWWM14CMQ0wCwYDVQQKEwRHWkNBMQwwCgYDVQQLEwNKU0IxETAPBgNVBAMTCEdaQ0EtSlNCMCIYDzIwMTcwNDIxMTYwMDAwWhgPMjAyNzA0MTkxNjAwMDBaMF8xCzAJBgNVBAYTAkNOMQ8wDQYDVQQIHgaNNV3edwExDzANBgNVBAceBo01ljNeAjENMAsGA1UEChMER1pDQTEMMAoGA1UECxMDSlNCMREwDwYDVQQDEwhHWkNBLUpTQjBZMBMGByqGSM49AgEGCCqBHM9VAYItA0IABOoUiMQkg2dV0mVrnvnygEGzULrv/AZXDY7GYBkIJqvnxyIdHsBP6b60SSGDVzzYvhJvficc4ka6QcVbn75N1eCjXTBbMAwGA1UdEwQFMAMBAf8wHQYDVR0OBBYEFO4mZxUiHxkHBTbIxfFY0cgut/LyMB8GA1UdIwQYMBaAFO4mZxUiHxkHBTbIxfFY0cgut/LyMAsGA1UdDwQEAwIBhjAKBggqgRzPVQGDdQNIADBFAiEAia0E6/pBXpVByu0hQ5IPqDK8VanCPngwhdfYTxqdD0sCIATbzX/OLXR5ddVnJBrprFWZOSjLpOoYzN4Glc7qufcnMYIBejCCAXYCAQEwcDBfMQswCQYDVQQGEwJDTjEPMA0GA1UECB4GjTVd3ncBMQ8wDQYDVQQHHgaNNZYzXgIxDTALBgNVBAoTBEdaQ0ExDDAKBgNVBAsTA0pTQjERMA8GA1UEAxMIR1pDQS1KU0ICDQCnzXcRmRvKQrbzGXAwDAYIKoEcz1UBg3UFAKCBmDAaBgkqhkiG9w0BCQMxDQYLKoZIhvcNAQkQAQQwHAYJKoZIhvcNAQkFMQ8XDTE3MDQyNzAxMTgwN1owKwYLKoZIhvcNAQkQAgwxHDAaMBgwFgQU+2ny0Ska2dAzGcd8bGsbWUlIAk8wLwYJKoZIhvcNAQkEMSIEIHFHIAEgHN8IXKKmLMO+VzVYikW8f9KpCziIuZkl98jnMA0GCSqBHM9VAYItAQUABEcwRQIgZplSs6cAq39qDzoBHOUI92Xzr5+gTLG8/Iia3g4JpwACIQCDkYsLahJCXBY3EEMpvxRuZCSWM7CQOVU77Ir8I/RSeA==";
-        String type = "5";
+        String type = "6";
 
 
         switch (type) {
@@ -116,6 +117,10 @@ public class Test {
             }
 
             case "6": {
+                String serialnumber="070005201702250100000000143456";
+//                String
+                CA ca = new CA("https://58.42.231.108:5001/","Test_W");
+                System.out.println(ca.VerifyCertificate(serialnumber));
 
             }
         }

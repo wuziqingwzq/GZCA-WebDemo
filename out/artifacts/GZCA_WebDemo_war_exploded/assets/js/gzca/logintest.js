@@ -5,6 +5,7 @@ function test() {
 function test2() {
 
 }
+
 //==========================================================================================================
 //先安网关操作函数
 function verifyCertByNetOne() {
@@ -355,8 +356,7 @@ function setTabsState(TabsID, tabIndex) {
     $("#" + TabsID).tabs("open", tabnum);
 }
 
-//后台交互部分js=======================================================================================================
-//页面与后台交互Ajax函数
+//用户证书管理系统交互函数
 function sendVerify(url, parameter) {
     //原生AJAX传递参数，参考代码
     changemessage('连接中......请稍候', 0);
@@ -397,6 +397,7 @@ function verifycert() {
     var url = "/WebDemo/gzcaverifylogin";
     var param = "cert_sign_serial=" + $("#cert_sign_serial").val()
         + "&type=" + type;
+    param= encodeURI(param);
     sendVerify(url, param);
 }
 
@@ -407,7 +408,6 @@ function verifysign() {
         + "&data=" + $("#data").val()
         + "&signature=" + $("#signature").val()
         + "&type=" + type;
-    // param = encodeURIComponent(param);
     sendVerify(url, param);
 }
 
