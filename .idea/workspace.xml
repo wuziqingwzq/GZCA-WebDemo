@@ -6,19 +6,35 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb1dd5e0-78be-4008-91dc-2b828f95512e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Config.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gzca/config/DemoConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/WEB-INF/classes/gzca/servlet/gzcaverifylogin/gzcaverifylogin.class" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/WEB-INF/classes/gzca/servlet/gzcaverifylogin/gzcaverifylogin.class" />
+    <list default="true" id="bb1dd5e0-78be-4008-91dc-2b828f95512e" name="Default" comment="1.增加了一个canvas学习的模块&#10;2.在首页将相关资料——AmazeUI的链接加入进去">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/httpcomponentsclient4/5/3/commons-codec-1.9.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/httpcomponentsclient4/5/3/commons-logging-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/httpcomponentsclient4/5/3/fluent-hc-4.5.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/httpcomponentsclient4/5/3/httpclient-4.5.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/httpcomponentsclient4/5/3/httpclient-cache-4.5.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/httpcomponentsclient4/5/3/httpclient-win-4.5.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/httpcomponentsclient4/5/3/httpcore-4.4.6.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/httpcomponentsclient4/5/3/httpmime-4.5.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/httpcomponentsclient4/5/3/jna-4.1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/httpcomponentsclient4/5/3/jna-platform-4.1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_codec_1_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/spark/spark_config.properties" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/WEB-INF/classes/lib/commons-httpclient-3.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GZCA-WebDemo/lib/commons-httpclient-3.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/lib/commons-httpclient-3.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/lib/spark/commons-codec-1.6.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/lib/spark/httpclient-4.3.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/lib/spark/httpcore-4.3.3.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/WEB-INF/classes/gzca/test/Test.class" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/WEB-INF/classes/gzca/test/Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GZCA-WebDemo/gzca/servlet/gzcaverifylogin/gzcaverifylogin.class" afterPath="$PROJECT_DIR$/out/production/GZCA-WebDemo/gzca/servlet/gzcaverifylogin/gzcaverifylogin.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GZCA-WebDemo/gzca/test/Test.class" afterPath="$PROJECT_DIR$/out/production/GZCA-WebDemo/gzca/test/Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/GZCA_WebDemo_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/GZCA_WebDemo_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/spark.xml" afterPath="$PROJECT_DIR$/.idea/libraries/spark.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/gzca/logintest.js" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/gzca/logintest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gzca/servlet/gzcaverifylogin/gzcaverifylogin.java" afterPath="$PROJECT_DIR$/src/gzca/servlet/gzcaverifylogin/gzcaverifylogin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GZCA-WebDemo.iml" afterPath="$PROJECT_DIR$/GZCA-WebDemo.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gzca/test/Test.java" afterPath="$PROJECT_DIR$/src/gzca/test/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/gzca/logintest.js" afterPath="$PROJECT_DIR$/web/assets/js/gzca/logintest.js" />
     </list>
+    <list id="da125343-709c-42ef-8738-a0ff45764675" name="工程文件" comment="" />
     <list id="0ccf9684-8b5f-4d9e-a58d-9d1970cb0783" name="合并代码" comment="合并代码" />
     <list id="6f300cc8-dc80-463e-bdbe-019c7633ae9f" name="1.修复了由于项目机构引起的引用包错误，无法调用Spark-format-sdk的问题。" comment="1.修复了由于项目机构引起的引用包错误，无法调用Spark-format-sdk的问题。" />
     <ignored path="GZCA-WebDemo.iws" />
@@ -34,6 +50,9 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/GZCA_WebDemo$tomcat8.coverage" NAME="tomcat8 Coverage Results" MODIFIED="1491366765217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/GZCA_WebDemo$Test.coverage" NAME="Test Coverage Results" MODIFIED="1495176192607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>gzca.test.*</FILTER>
+    </SUITE>
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -53,61 +72,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="logintest.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/testpage/logintest.html">
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gzca/test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2204">
-              <caret line="116" column="63" lean-forward="false" selection-start-line="116" selection-start-column="53" selection-end-line="116" selection-end-column="63" />
+            <state relative-caret-position="184">
+              <caret line="143" column="29" lean-forward="true" selection-start-line="143" selection-start-column="29" selection-end-line="143" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <file leaf-file-name="SparkClient.class" pinned="false" current-in-tab="true">
+        <entry file="jar://$PROJECT_DIR$/src/lib/spark/spark-platform-sdk-1.0.6.jar!/cn/com/syan/spark/app/sdk/classified/SparkClient.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="199" column="43" lean-forward="false" selection-start-line="199" selection-start-column="25" selection-end-line="199" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpClientDelegate.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/src/lib/spark/spark-platform-sdk-1.0.6.jar!/cn/com/syan/spark/app/sdk/classified/util/HttpClientDelegate.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="72" column="61" lean-forward="false" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SSLConnectionSocketFactory.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/src/lib/httpcomponentsclient4/5/3/httpclient-4.5.3.jar!/org/apache/http/conn/ssl/SSLConnectionSocketFactory.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
+              <caret line="42" column="39" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gzcaverifylogin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gzca/servlet/gzcaverifylogin/gzcaverifylogin.java">
+      <file leaf-file-name="spark_config.properties" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/src/lib/spark/spark-platform-sdk-1.0.6.jar!/spark_config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="netoneServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gzca/servlet/netone/netoneServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logintest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/assets/js/gzca/logintest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2451">
-              <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+            <state relative-caret-position="57">
+              <caret line="3" column="913" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="1022" />
               <folding />
             </state>
           </provider>
@@ -189,7 +200,6 @@
         <option value="$PROJECT_DIR$/web/testpage/SparkCallback.jsp" />
         <option value="$PROJECT_DIR$/web/testpage/logintest.html" />
         <option value="$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SendRedirectToSpark.java" />
-        <option value="$PROJECT_DIR$/src/gzca/test/Test.java" />
         <option value="$PROJECT_DIR$/web/testpage/testdemo.html" />
         <option value="$PROJECT_DIR$/web/assets/js/gzca/logintest.js" />
         <option value="$PROJECT_DIR$/src/gzca/servlet/gzcaverifylogin/gzcaverifylogin.java" />
@@ -197,6 +207,9 @@
         <option value="$PROJECT_DIR$/src/Config" />
         <option value="$PROJECT_DIR$/src/Config.properties" />
         <option value="$PROJECT_DIR$/src/gzca/config/DemoConfig.java" />
+        <option value="$PROJECT_DIR$/src/gzca/test/Test.java" />
+        <option value="$PROJECT_DIR$/src/lib/spark/spark-platform-sdk-1.0.6.jar!/spark_config.properties" />
+        <option value="$PROJECT_DIR$/src/lib/spark/spark-platform-sdk-1.0.6.jar!/cn/com/syan/spark/app/sdk/classified/SparkClient.class" />
       </list>
     </option>
   </component>
@@ -259,6 +272,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -271,107 +285,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GZCA-WebDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GZCA-WebDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GZCA-WebDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GZCA-WebDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GZCA-WebDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GZCA-WebDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GZCA-WebDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GZCA-WebDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GZCA-WebDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GZCA-WebDemo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3208763" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib/httpcomponentsclient4/5/3/httpclient-4.5.3.jar!/" />
     <property name="ChangesBrowser.SHOW_FLATTEN" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Properties" />
@@ -381,11 +308,11 @@
       <recent name="gzca.test" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WorkSpace\GZCA-WebDemo\src\httpclient" />
+      <recent name="D:\WorkSpace\GZCA-WebDemo\src\lib\spark" />
+      <recent name="D:\WorkSpace\GZCA-WebDemo\src\lib\httpcomponentsclient4\5\3" />
+      <recent name="D:\WorkSpace\GZCA-WebDemo\src\lib\httpcomponentscore4\4\6" />
       <recent name="D:\WorkSpace\GZCA-WebDemo\web\testpage" />
-      <recent name="D:\WorkSpace\WebDemo\web\assets" />
-      <recent name="D:\WorkSpace\WebDemo\web\testpage" />
-      <recent name="D:\WorkSpace\WebDemo\src\gzca\servlet" />
-      <recent name="D:\WorkSpace\WebDemo\src\gzca\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\WorkSpace\GZCA-WebDemo\web" />
@@ -407,7 +334,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.tomcat8">
+  <component name="RunManager" selected="Application.Test">
     <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1010,6 +937,7 @@
       <workItem from="1494491390959" duration="1512000" />
       <workItem from="1494904673816" duration="640000" />
       <workItem from="1494990963061" duration="197000" />
+      <workItem from="1495176441517" duration="1476000" />
     </task>
     <task id="LOCAL-00001" summary="Rejected commit: Default">
       <created>1491012939868</created>
@@ -1085,7 +1013,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273691000" />
+    <option name="totallyTimeSpent" value="275931000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1101,7 +1029,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4076923" sideWeight="0.2366958" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4076923" sideWeight="0.24126984" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.4940429" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962668" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1119,9 +1047,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.49722" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.6507937" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4076923" sideWeight="0.76330423" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4076923" sideWeight="0.7587302" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.49086577" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2595238" sideWeight="0.6557734" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26349208" sideWeight="0.6557734" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17936508" sideWeight="0.34422657" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1207,8 +1135,14 @@
           <properties />
           <option name="timeStamp" value="85" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/gzca/test/Test.java</url>
+          <line>143</line>
+          <properties />
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="115" />
+      <option name="time" value="116" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -1222,11 +1156,60 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/gzca/servlet/gzcaverifylogin/gzcaverifylogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#2517#2518#0" expanded="false" />
+            <element signature="e#2567#2568#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SparkRedirectServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1045">
+          <caret line="71" column="32" lean-forward="false" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SendRedirectToSpark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2185">
+          <caret line="134" column="0" lean-forward="false" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1350#1358#0" expanded="false" />
+            <marker date="1495175354437" expanded="true" signature="5380:5396" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/testpage/logintest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="75" column="39" lean-forward="false" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
+          <folding>
+            <marker date="1495175555093" expanded="true" signature="17682:17713" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/js/gzca/logintest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="38" column="25" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/testpage/logintest.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2204">
           <caret line="116" column="63" lean-forward="false" selection-start-line="116" selection-start-column="53" selection-end-line="116" selection-end-column="63" />
-          <folding />
+          <folding>
+            <marker date="1495175555093" expanded="true" signature="17682:17713" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1242,7 +1225,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2517#2518#0" expanded="false" />
+            <element signature="e#2567#2568#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1250,7 +1236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1258,7 +1243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1266,7 +1250,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2451">
           <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1274,7 +1257,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1282,7 +1264,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2204">
           <caret line="116" column="63" lean-forward="false" selection-start-line="116" selection-start-column="53" selection-end-line="116" selection-end-column="63" />
-          <folding />
+          <folding>
+            <marker date="1495175555093" expanded="true" signature="17682:17713" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1298,7 +1282,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2517#2518#0" expanded="false" />
+            <element signature="e#2567#2568#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1306,7 +1293,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1314,7 +1300,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1322,7 +1307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2451">
           <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1330,7 +1314,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1338,7 +1321,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2204">
           <caret line="116" column="63" lean-forward="false" selection-start-line="116" selection-start-column="53" selection-end-line="116" selection-end-column="63" />
-          <folding />
+          <folding>
+            <marker date="1495175555093" expanded="true" signature="17682:17713" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1354,7 +1339,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2517#2518#0" expanded="false" />
+            <element signature="e#2567#2568#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1362,7 +1350,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2451">
           <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1370,7 +1357,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1378,7 +1364,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1495175555093" expanded="true" signature="17682:17713" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1415,14 +1403,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/src/lib/spark/spark-platform-sdk-1.0.6.jar!/spark_config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="913" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="1022" />
+          <folding>
+            <element signature="e#2517#2518#0" expanded="false" />
+            <element signature="e#2567#2568#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1450,9 +1434,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/testpage/logintest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2204">
-          <caret line="116" column="63" lean-forward="false" selection-start-line="116" selection-start-column="53" selection-end-line="116" selection-end-column="63" />
-          <folding />
+        <state relative-caret-position="1425">
+          <caret line="75" column="39" lean-forward="false" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
+          <folding>
+            <marker date="1495175555093" expanded="true" signature="17682:17713" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1460,15 +1446,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2451">
           <caret line="129" column="0" lean-forward="false" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gzca/servlet/gzcaverifylogin/gzcaverifylogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="57">
+          <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#2517#2518#0" expanded="false" />
+            <element signature="e#2567#2568#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1483,7 +1471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1492,7 +1479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1500,6 +1486,128 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/lib/spark/spark-platform-sdk-1.0.6.jar!/spark_config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="913" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="1022" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lib/spark/spark_config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/lib/spark/spark-platform-sdk-1.0.6.jar!/cn/com/syan/spark/app/sdk/classified/util/HttpClientDelegate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="72" column="61" lean-forward="false" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5947">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1495177979792" expanded="true" signature="88346:88363" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="88346:88381" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="88346:88394" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="88346:88409" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="88444:91059" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="88457:91044" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="88511:88914" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="88530:88899" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="88656:88879" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="88696:88845" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="88717:88823" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="88964:89276" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="88983:89261" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="89057:89241" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="89097:89207" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="89118:89185" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="89327:89598" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="89346:89583" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="89379:89563" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="89419:89529" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="89440:89507" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="89641:89953" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="89660:89938" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="89734:89918" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="89774:89884" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="89795:89862" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="90004:90325" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="90023:90310" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="90106:90290" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="90146:90256" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="90167:90234" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="90360:90666" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="90379:90651" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="90453:90631" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="90493:90597" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="90514:90575" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="90718:91030" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="90737:91015" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="90811:90995" ph="..." />
+            <marker date="1495177979792" expanded="true" signature="90851:90961" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/spark.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/commons_codec_1_9.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/libraries/lib.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/lib/httpcomponentsclient4/5/3/httpclient-4.5.3.jar!/org/apache/http/conn/ssl/SSLConnectionSocketFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="42" column="39" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gzca/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="143" column="29" lean-forward="true" selection-start-line="143" selection-start-column="29" selection-end-line="143" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/lib/spark/spark-platform-sdk-1.0.6.jar!/cn/com/syan/spark/app/sdk/classified/SparkClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="199" column="43" lean-forward="false" selection-start-line="199" selection-start-column="25" selection-end-line="199" selection-end-column="43" />
           <folding />
         </state>
       </provider>
@@ -1523,7 +1631,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web (GZCA-WebDemo)|Web</last-edited>
+          <last-edited>Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
