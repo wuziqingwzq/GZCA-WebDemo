@@ -56,6 +56,7 @@ public class SendRedirectToSpark extends HttpServlet {
                     break;
                 }
             }
+            //推送数据
             case 1: {
                 String userName = "";
                 String userIdNo = "";
@@ -68,7 +69,13 @@ public class SendRedirectToSpark extends HttpServlet {
                 /****
                  * 以下代码为调用接口示例代码
                  */
+                String URL="";
+                String PrivateKey="";
+                String Cert ="";
+
                 SparkClient sc = SparkClients.getDefaultClient();
+
+                sc= new SparkClient(URL,PrivateKey,Cert);
                 User user = new User();
                 user.setCertificate(userCert);
                 user.setName(userName);       //设置用户名称 或者单位名称     如果不设置 系统为默认使用证书CN项作为名称
