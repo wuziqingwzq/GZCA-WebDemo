@@ -20,8 +20,9 @@
     </content>
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="SparkPlatFormDependence" level="project" />
-    <orderEntry type="library" exported="" name="SparkDependence" level="project" />
-    <orderEntry type="library" exported="" name="lib" level="project" />
+    <orderEntry type="library" name="gzca" level="project" />
+    <orderEntry type="library" name="spark" level="application" />
+    <orderEntry type="library" name="Spark_platform_sdk_dependence" level="application" />
+    <orderEntry type="library" name="gzca_dependece" level="project" />
   </component>
 </module>

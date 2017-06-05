@@ -1,7 +1,7 @@
 package gzca.servlet.gzcaverifylogin;
 
 
-import com.gzca.CA;
+import gzca.ca.GZCA;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -22,7 +22,7 @@ public class gzcaverifylogin extends javax.servlet.http.HttpServlet {
         response.setHeader("Content-Type", "text/html;charset=UTF-8");
 
         //创建CA对象
-        CA ca = new CA(gzcaverifyURL, app_name);
+        GZCA ca = new GZCA(gzcaverifyURL, app_name);
 
         //连接用户证书管理系统
         String result = "connect failed......";
@@ -39,7 +39,7 @@ public class gzcaverifylogin extends javax.servlet.http.HttpServlet {
             String signature = "";
             signature = request.getParameter("signature");
             signature = signature.replace(" ","+");
-            result = ca.VerifySignedData(cert_serial, data, signature);
+            result = ca.VerifySign(cert_serial, data, signature);
             System.out.println("签名原文：" + data);
             System.out.println("签名结果：" + signature);
         }

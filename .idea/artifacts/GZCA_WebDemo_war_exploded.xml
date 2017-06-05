@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="GZCA-WebDemo:war exploded">
+  <artifact type="exploded-war" build-on-make="true" name="GZCA-WebDemo:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="GZCA-WebDemo/web/Web" />
@@ -8,9 +8,10 @@
           <element id="module-output" name="GZCA-WebDemo" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="SparkPlatFormDependence" />
-          <element id="library" level="project" name="SparkDependence" />
-          <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="gzca" />
+          <element id="library" level="project" name="Spark_platform_sdk_dependence" />
+          <element id="library" level="project" name="spark" />
+          <element id="library" level="project" name="gzca_dependece" />
         </element>
       </element>
     </root>

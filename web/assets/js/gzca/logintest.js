@@ -149,7 +149,7 @@ function pushCert() {
             alert(data);
         },
         error: function (msg) {//ajax请求失败后触发的方法
-            alert("Push Error");
+            // alert("Push Error");
         }
     });
 }

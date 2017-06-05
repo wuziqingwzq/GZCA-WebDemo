@@ -6,11 +6,11 @@ import cn.com.syan.spark.app.sdk.classified.SparkClients;
 import cn.com.syan.spark.app.sdk.classified.entity.Oid;
 import cn.com.syan.spark.app.sdk.classified.entity.Response;
 import cn.com.syan.spark.app.sdk.classified.entity.User;
-import com.gzca.CA;
 import com.syan.netonej.exception.NetonejExcepption;
 import com.syan.netonej.http.client.PCSClient;
 import com.syan.netonej.http.client.SVSClient;
 import com.syan.netonej.http.client.TSAClient;
+import gzca.ca.GZCA;
 
 import java.io.IOException;
 import java.security.SignatureException;
@@ -119,7 +119,7 @@ public class Test {
             case "6": {
                 String serialnumber="070005201702250100000000143456";
 //                String
-                CA ca = new CA("https://58.42.231.108:5001/","Test_W");
+                GZCA ca = new GZCA("https://58.42.231.108:5001/","Test_W");
                 System.out.println(ca.VerifyCertificate(serialnumber));
 
             }
