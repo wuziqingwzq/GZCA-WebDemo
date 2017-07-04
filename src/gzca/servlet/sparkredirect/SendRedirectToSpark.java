@@ -7,7 +7,6 @@ import cn.com.syan.spark.app.sdk.classified.entity.Response;
 import cn.com.syan.spark.app.sdk.classified.entity.User;
 import cn.com.syan.spark.app.sdk.connect.SparkConnectException;
 import cn.com.syan.spark.app.sdk.connect.oauth.Oauth;
-import gzca.test.HLJTest;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -59,8 +58,6 @@ public class SendRedirectToSpark extends HttpServlet {
             }
             //推送数据
             case 1: {
-                HLJTest hljTest = new HLJTest();
-
                 String userName = "";
                 String userIdNo = "";
                 String userCert = "";
@@ -77,8 +74,6 @@ public class SendRedirectToSpark extends HttpServlet {
                 String Cert ="";
 
                 SparkClient sc = SparkClients.getDefaultClient();
-
-//                sc= new SparkClient(URL,PrivateKey,Cert);
                 User user = new User();
                 user.setCertificate(userCert);
                 user.setName(userName);       //设置用户名称 或者单位名称     如果不设置 系统为默认使用证书CN项作为名称
