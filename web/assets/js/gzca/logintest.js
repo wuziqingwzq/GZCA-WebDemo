@@ -334,6 +334,45 @@ $(document).ready(function () {
     namevalue = $("input[name='tabsSelect']").attr("value");
 });
 
+//设置按钮模态窗口
+// $(function() {
+//     var $modal = $('#your-modal');
+//     $modal.siblings('.am-btn').on('click', function(e) {
+//         var $target = $(e.target);
+//         if (($target).hasClass('js-modal-open')) {
+//             $modal.modal();
+//         } else if (($target).hasClass('js-modal-close')) {
+//             $modal.modal('close');
+//         } else {
+//             $modal.modal('toggle');
+//         }
+//     });
+// });
+
+$(function () {
+    var $modal = $('#refresh-setting');
+    $modal.on('click',function () {
+        alert("test");
+        var type = "get";
+        var settingtable;
+        $.ajax({
+            type: "post",//数据发送的方式（post 或者 get）
+            url: "../getSetting",
+            data: {type: type},
+            dataType: "text",
+            success: function (data) {//ajax请求成功后触发的方法
+                alert(data);
+            },
+            error: function (msg) {//ajax请求失败后触发的方法
+                alert("Update Error");
+            }
+        });
+
+    });
+})
+
+
+
 //通过证书文件写入到页面,将页面参数与JS代码分离
 function writeHtmlByCert(crtx) {
     $("#cert_sign_serial").val(crtx.SerialNumberHex);

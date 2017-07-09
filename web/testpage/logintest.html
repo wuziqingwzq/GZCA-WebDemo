@@ -66,9 +66,16 @@
         </a>
     </h1>
 
+    <!--header靠右的按钮-->
     <div class="am-header-right am-header-nav">
+        <!--设置按钮，Icon-->
+        <a href="#title-link" class=""
+           data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0}">
+            <i class="am-icon-cog am-icon-md"></i>
+        </a>
+        <!--菜单按钮-->
         <a href="#right-link" class="">
-            <i class="am-header-icon am-icon-bars"></i>
+            <i class="am-header-icon am-icon-bars am-icon-md"></i>
         </a>
     </div>
 </header>
@@ -81,6 +88,47 @@
             <li id="tabs2" class=""><a href="[data-tab-panel-1]">NetONE API</a></li>
             <li id="tabs3" class=""><a href="[data-tab-panel-2]">Spark</a></li>
         </ul>
+
+        <!--设置页面——模态窗口-->
+        <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+            <div class="am-modal-dialog">
+                <div class="am-modal-hd">连接设置
+                    <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                </div>
+                <div class="am-modal-bd" id ="setting-context">
+                    <div>
+                        <table class="am-table" id="demo-test-">
+                            <thead>
+                                <tr>
+                                    <th>配置信息</th>
+                                    <th>连接地址</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>
+                                        <a href="#title-link" class="" id="refresh-setting">
+                                            <i class="am-icon-refresh am-icon-sm" aria-hidden="true"></i>
+                                            刷新
+                                        </a>
+                                        <a href="#title-link" class="add-setting">
+                                            <i class="am-icon-plus am-icon-sm" aria-hidden="true"></i>
+                                            新增
+                                        </a>
+                                    </th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--选项卡——证书操作-->
         <div class="am-tabs-bd">
             <div data-tab-panel-0="" class="am-tab-panel am-active">
                 <!--选项卡模块-证书操作-->
@@ -116,7 +164,7 @@
                                     <button type="button" class="am-btn am-btn-secondary am-round"
                                             onclick="verifycert()">验证证书
                                     </button>
-                                    <button type="button" class="am-btn am-btn-secondary am-round" onclick="test()">
+                                    <button type="button" class="am-btn am-btn-secondary am-round" onclick="">
                                         测试按钮
                                     </button>
                                     <button type="button" class="am-btn am-btn-secondary am-round" onclick="test2()">
@@ -249,16 +297,20 @@
                                 <button type="button" class="am-btn am-btn-secondary am-round"
                                         onclick="verifySignatureByNetOne()">验证签名
                                 </button>
-                                <button type="button" class="am-btn am-btn-secondary am-round" onclick="timeStampByNetOne()">
+                                <button type="button" class="am-btn am-btn-secondary am-round"
+                                        onclick="timeStampByNetOne()">
                                     请求时间戳
                                 </button>
-                                <button type="button" class="am-btn am-btn-secondary am-round" onclick="verifyTimeStamp()">
+                                <button type="button" class="am-btn am-btn-secondary am-round"
+                                        onclick="verifyTimeStamp()">
                                     验证时间戳
                                 </button>
-                                <button type="button" class="am-btn am-btn-secondary am-round" onclick="pubKeyEncrypt()">
+                                <button type="button" class="am-btn am-btn-secondary am-round"
+                                        onclick="pubKeyEncrypt()">
                                     服务器加密
                                 </button>
-                                <button type="button" class="am-btn am-btn-secondary am-round" onclick="priKeyDecrypt()">
+                                <button type="button" class="am-btn am-btn-secondary am-round"
+                                        onclick="priKeyDecrypt()">
                                     服务器解密
                                 </button>
                             </div>
