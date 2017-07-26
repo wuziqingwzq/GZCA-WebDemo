@@ -27,7 +27,7 @@ public class HttpSecurityClient {
      */
 
     public void pushdata(){
-        System.out.println();
+
     }
 
     private static SSLConnectionSocketFactory createSSLConnSocketFactory() {

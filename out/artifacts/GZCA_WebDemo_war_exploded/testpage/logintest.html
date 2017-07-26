@@ -1,0 +1,375 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>login test</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="../assets/i/favicon.png">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../assets/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="../assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css?v=iir8iz5n">
+    <link rel="stylesheet" href="../assets/css/amaze.min.css?v=iir8iz5n">
+    <link rel="stylesheet" href="../assets/css/app.css?v=iir8iz5n">
+    <link rel="canonical" href="http://amazeui.org/widgets/tabs/d2/0?_ver=2.x"/>
+
+    <!-- 网站框架调用JS -->
+    <script src="../assets/js/jquery.min.js?v=iir8iz5n"></script>
+    <script src="../assets/js/handlebars.min.js?v=iir8iz5n"></script>
+    <script src="../assets/js/amazeui.min.js?v=iir8iz5n"></script>
+
+    <!-- 获取证书项JS，先安控件 -->
+    <!--<script  src="../assets/js/netonex/jquery.js"></script>-->
+    <script src="../assets/js/netonex/jquery.sprintf.js"></script>
+    <script src="../assets/js/netonex/objectclass.js"></script>
+    <script src="../assets/js/netonex/netonex.base.src.js"></script>
+    <script src="../assets/js/netonex/netonex.singleton.js"></script>
+    <script src="../assets/js/gzca/netonx_zjq.js"></script>
+    <script src="../assets/js/gzca/logintest.js"></script>
+</head>
+
+<body>
+<header data-am-widget="header"
+        class="am-header am-header-default">
+    <div class="am-header-left am-header-nav">
+        <a href="../index.html" class="">
+            <i class="am-header-icon am-icon-home"></i>
+        </a>
+    </div>
+
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            Login DEMO
+        </a>
+    </h1>
+
+    <!--header靠右的按钮-->
+    <div class="am-header-right am-header-nav">
+        <!--设置按钮，Icon-->
+        <a href="#title-link" class=""
+           data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0}">
+            <i class="am-icon-cog am-icon-md"></i>
+        </a>
+        <!--菜单按钮-->
+        <a href="#right-link" class="">
+            <i class="am-header-icon am-icon-bars am-icon-md"></i>
+        </a>
+    </div>
+</header>
+
+<input type=text hidden id="tabsSelect" name="tabsSelect" value="">
+<div class="am-container" id="demo-view" data-backend-compiled="">
+    <div data-am-widget="tabs" id="logintest-main-tabs" data-am-tabs="{noSwipe:1}" class="am-tabs am-tabs-d2">
+        <ul class="am-tabs-nav am-cf">
+            <li id="tabs1" class="am-active"><a href="[data-tab-panel-0]">Certificate</a></li>
+            <li id="tabs2" class=""><a href="[data-tab-panel-1]">NetONE API</a></li>
+            <li id="tabs3" class=""><a href="[data-tab-panel-2]">Spark</a></li>
+        </ul>
+
+        <!--设置页面——模态窗口-->
+        <div class="am-modal am-modal-no-btn" tabindex="-1" id="doc-modal-1">
+            <div class="am-modal-dialog">
+                <div class="am-modal-hd">连接设置
+                    <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                </div>
+                <div class="am-modal-bd" id ="setting-context">
+                    <div>
+                        <table class="am-table" id="demo-test-">
+                            <thead>
+                                <tr>
+                                    <th>配置信息</th>
+                                    <th>连接地址</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>
+                                        <a href="#title-link" class="" id="refresh-setting">
+                                            <i class="am-icon-refresh am-icon-sm" aria-hidden="true"></i>
+                                            刷新
+                                        </a>
+                                        <a href="#title-link" class="add-setting">
+                                            <i class="am-icon-plus am-icon-sm" aria-hidden="true"></i>
+                                            新增
+                                        </a>
+                                    </th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--选项卡——证书操作-->
+        <div class="am-tabs-bd">
+            <div data-tab-panel-0="" class="am-tab-panel am-active">
+                <!--选项卡模块-证书操作-->
+                <div>
+                    <!--先安控件初始化-->
+                    <div action="netonex" netonexid="netonex"
+                         activex32_codebase="../assets/js/netonex/NetONEX32.v1.3.8.0.cab"
+                         activex64_codebase="../assets/js/netonex/NetONEX64.v1.3.8.0.cab"
+                         npapi_codebase="../assets/js/netonex/NetONEX.v1.3.8.0.msi"
+                         version="1.3.8.0" debug="1"
+                         logshowid="divlog">
+                        <!-- if activex auto installation/upgrade is reqired, at least one of the following 2 lines must be present. -->
+                        <object width="1" height="1" classid="CLSID:EC336339-69E2-411A-8DE3-7FF7798F8307"
+                                codebase="NetONEX32.v1.3.8.0.cab#Version=1,3,8,0" id="ntx"></object>
+                        <object width="1" height="1" classid="CLSID:EC336339-69E2-411A-8DE3-7FF7798F8307"
+                                codebase="NetONEX64.v1.3.8.0.cab#Version=1,3,8,0"></object>
+
+                        <!--先安控件操作日志-->
+                    </div>
+                    <div id="divlog">
+                    </div>
+                    <!--证书信息表单-->
+                    <form class="am-form" name="certform" method="post" action="">
+                        <fieldset>
+                            <legend>客户端证书操作</legend>
+
+                            <!--证书操作按钮组-->
+                            <div class="am-btn-toolbar">
+                                <div class="am-btn-group">
+                                    <button type="button" class="am-btn am-btn-secondary am-round"
+                                            onclick="selectCertificate(true)">读取证书
+                                    </button>
+                                    <button type="button" class="am-btn am-btn-secondary am-round"
+                                            onclick="verifycert()">验证证书
+                                    </button>
+                                    <button type="button" class="am-btn am-btn-secondary am-round" onclick="">
+                                        测试按钮
+                                    </button>
+                                    <button type="button" class="am-btn am-btn-secondary am-round" onclick="test2()">
+                                        测试按钮
+                                    </button>
+                                </div>
+                            </div>
+                            <br/>
+
+                            <!--消息显示框-->
+                            <div class="am-alert" id="serverResult" style="display: none;">
+                                <button type="button" class="am-close" onclick="closealert()">&times;</button>
+                                <p>无消息</p>
+                            </div>
+
+                            <!--证书数据框-->
+                            <div class="am-form-group am-input-group">
+                                <label class="am-input-group-label " for="cert_sign_serial">证书序列号</label>
+                                <input type="text" id="cert_sign_serial" name="cert_sign_serial" rows="1"/>
+                            </div>
+                            <div class="am-form-group am-input-group">
+                                <label class="am-input-group-label " for="cert_subject">证书主题项</label>
+                                <input type="text" id="cert_subject" name="cert_subject" rows="1"/>
+                            </div>
+                            <div class="am-form-group am-input-group">
+                                <label class="am-input-group-label " for="cert_sign_value">证书Base64</label>
+                                <input type="text" class="am-form-field" id="cert_sign_value" name="cert_sign_value"
+                                       rows="1"/>
+                                <span class="am-input-group-btn">
+                                    <button type="button" class="am-btn" onclick="CreateCertByFile()">
+                                        <i class="am-icon-cloud-upload"></i>上传
+                                    </button>
+                                </span>
+                                <span class="am-input-group-btn">
+                                    <button type="button" class="am-btn"
+                                            onclick="CreateCertByB64()">解析
+                                    </button>
+                                </span>
+                            </div>
+
+                            <div class="am-panel-group" id="accordion">
+                                <div class="am-panel am-panel-default">
+                                    <div class="am-panel-hd">
+                                        <h4 class="am-panel-title"
+                                            data-am-collapse="{parent: '#accordion', target: '#do-not-say-1'}">
+                                            扩展信息（身份证号、有效期、CN项等）
+                                        </h4>
+                                    </div>
+                                    <div id="do-not-say-1" class="am-panel-collapse am-collapse am-in">
+                                        <div class="am-panel-bd">
+                                            <div class="am-form-group am-input-group">
+                                                <label class="am-input-group-label " for="cert_sign_serial">用户编号</label>
+                                                <input type="text" id="user_id" name="cert_sign_serial" rows="1"/>
+                                            </div>
+                                            <div class="am-form-group am-input-group">
+                                                <label class="am-input-group-label " for="cert_sign_serial">用户名称</label>
+                                                <input type="text" id="FriendlyName" name="cert_sign_serial" rows="1"/>
+                                            </div>
+                                            <div class="am-form-group am-input-group">
+                                                <label class="am-input-group-label " for="cert_sign_serial">生效日期</label>
+                                                <input type="text" id="cert_NotBeforeSystemTime" name="cert_sign_serial"
+                                                       rows="1"/>
+                                            </div>
+                                            <div class="am-form-group am-input-group">
+                                                <label class="am-input-group-label " for="cert_sign_serial">失效日期</label>
+                                                <input type="text" id="cert_NotAfterSystemTime" name="cert_sign_serial"
+                                                       rows="1"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <fieldset>
+                            <legend>签名操作</legend>
+                            <!--签名操作按钮组-->
+                            <div class="am-btn-toolbar">
+                                <div class="am-btn-group">
+                                    <button type="button" class="am-btn am-btn-secondary am-round"
+                                            onclick="pkcs1(true)">PKCS1签名
+                                    </button>
+                                    <button type="button" class="am-btn am-btn-secondary am-round"
+                                            onclick="pkcs1(false)">本地验签
+                                    </button>
+                                    <button type="button" class="am-btn am-btn-secondary am-round"
+                                            onclick="verifysign()">验证签名
+                                    </button>
+                                    <button type="button" class="am-btn am-btn-secondary am-round"
+                                            onclick="envseal()">数字信封
+                                    </button>
+                                    <button type="button" class="am-btn am-btn-secondary am-round"
+                                            onclick="envopen()">信封解包
+                                    </button>
+                                </div>
+                            </div>
+                            <br/>
+
+                            <!--签名数据框-->
+                            <div class="am-form-group am-input-group">
+                                <label class="am-input-group-label" for="data">操作原文</label>
+                                <input type="text" id="data" rows="1" value="test value"/>
+                            </div>
+                            <div class="am-form-group am-input-group">
+                                <label class="am-input-group-label" for="data">原文B64</label>
+                                <input type="text" id="dataB64" rows="1" value="test value"/>
+                            </div>
+                            <div class="am-form-group am-input-group">
+                                <label class="am-input-group-label" for="signature">操作结果</label>
+                                <input type="text" id="signature" rows="1"/>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div data-tab-panel-1="" class="am-tab-panel">
+                <!--备注：先安网关功能测试-->
+                <!--功能按钮组-->
+
+                <!--数据展示框-->
+                <form class="am-form" name="sparkform" method="post" action="">
+                    <fieldset>
+                        <legend>网关测试</legend>
+                        <div class="am-btn-toolbar">
+                            <div class="am-btn-group">
+                                <button type="button" class="am-btn am-btn-secondary am-round"
+                                        onclick="verifyCertByNetOne()">验证证书
+                                </button>
+                                <button type="button" class="am-btn am-btn-secondary am-round"
+                                        onclick="verifySignatureByNetOne()">验证签名
+                                </button>
+                                <button type="button" class="am-btn am-btn-secondary am-round"
+                                        onclick="timeStampByNetOne()">
+                                    请求时间戳
+                                </button>
+                                <button type="button" class="am-btn am-btn-secondary am-round"
+                                        onclick="verifyTimeStamp()">
+                                    验证时间戳
+                                </button>
+                                <button type="button" class="am-btn am-btn-secondary am-round"
+                                        onclick="pubKeyEncrypt()">
+                                    服务器加密
+                                </button>
+                                <button type="button" class="am-btn am-btn-secondary am-round"
+                                        onclick="priKeyDecrypt()">
+                                    服务器解密
+                                </button>
+                            </div>
+                        </div>
+                        <div class="am-form-group">
+                            <label for="NetOne_certB64">证书B64</label>
+                            <input type="text" id="NetOne_certB64" class="" placeholder="">
+                        </div>
+                        <div class="am-form-group">
+                            <label for="netOneData">原文</label>
+                            <input type="text" id="netOneData" class="" placeholder="">
+                        </div>
+                        <div class="am-form-group">
+                            <label for="netOneValue">结果</label>
+                            <input type="text" id="netOneValue" class="" placeholder="">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div data-tab-panel-2="" class="am-tab-panel">
+                <!--Spark统一认证平台接口测试-->
+                <form class="am-form" name="sparkform" method="post" action="">
+                    <fieldset>
+                        <legend>Spark登陆demo</legend>
+                        <div class="am-btn-toolbar">
+                            <div class="am-btn-group">
+                                <button type="button" class="am-btn am-btn-secondary am-round"
+                                        onclick="javascript:window.location.href='/WebDemo/SendRedirectToSpark?type=login'">
+                                    Spark登陆
+                                </button>
+                                <button type="button" class="am-btn am-btn-secondary am-round" onclick="pushCert()">证书推送
+                                </button>
+                                <button type="button" class="am-btn am-btn-secondary am-round" onclick="updateCert()">
+                                    证书更新
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <fieldset>
+                                <legend>Spark获取参数</legend>
+                                <div class="am-form-group">
+                                    <label for="OID_value">OID_LIST</label>
+                                    <input type="text" class="" id="OID_value" placeholder="设置应用组扩展项OID">
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="oldCert">旧证书B64</label>
+                                    <input type="text" class="" id="oldCert" placeholder="旧证书">
+                                </div>
+                                <div class="am-form-group">
+                                    <label for="newCert">新证书B64</label>
+                                    <input type="text" class="" id="newCert" placeholder="新证书">
+                                </div>
+                            </fieldset>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
