@@ -87,6 +87,31 @@ public class SendRedirectToSpark extends HttpServlet {
                  * 如果应用组没有oid扩展  oidList 可以为null
                  * 如   sc.joinGroup(user,1,null);
                  */
+//                Response r = null;
+//                User user = new User();
+//                for (int i = 100100; i < 200000; i++) {
+//                    String ii = "" + i;
+//                    List<Oid> oidList = new ArrayList<Oid>();
+//                    user.setCertificate(userCert);
+//                    user.setName(userName+ii);       //设置用户名称 或者单位名称     如果不设置 系统为默认使用证书CN项作为名称
+//                    user.setIdno(userIdNo+ii);               //证件号
+//                    Oid oid = new Oid();
+//                    oid.setOidMask("Test_Group_OID");
+//                         //组扩展 标识
+//                    oid.setOidValue(userOid+ii);           //组上扩展值
+//                    oidList.add(oid);
+//
+//                    try {
+//                        r = sc.joinGroup(user, 1, oidList);
+//                    } catch (CertificateException e) {
+//                        e.printStackTrace();
+//                    } catch (InvalidKeySpecException e) {
+//                        e.printStackTrace();
+//                    } catch (SignatureException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+
                 Response r = null;
                 try {
                     r = sc.joinGroup(user, 1, oidList);

@@ -168,7 +168,6 @@ public class GZCA {
                 .build();
         HttpPost httpPost = new HttpPost(uri);
         CloseableHttpResponse closeableHttpResponse = null;
-//        httpPost.setEntity(new UrlEncodedFormEntity(para, Charset.forName("UTF-8")));
         try {
             httpPost.setEntity(new UrlEncodedFormEntity(para, HTTP.UTF_8));
         } catch (UnsupportedEncodingException e) {
