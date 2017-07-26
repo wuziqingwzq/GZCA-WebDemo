@@ -10,75 +10,75 @@
     <list id="0ccf9684-8b5f-4d9e-a58d-9d1970cb0783" name="合并代码" comment="合并代码" />
     <list id="6f300cc8-dc80-463e-bdbe-019c7633ae9f" name="1.修复了由于项目机构引起的引用包错误，无法调用Spark-format-sdk的问题。" comment="1.修复了由于项目机构引起的引用包错误，无法调用Spark-format-sdk的问题。" />
     <list default="true" id="bb1dd5e0-78be-4008-91dc-2b828f95512e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/WEB-INF/classes/gzca/servlet/gzcaverifylogin/gzcaverifylogin.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/WEB-INF/classes/gzca/test/Test.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/app-icon72x72@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/admin-chrome.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/admin-firefox.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/admin-ie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/admin-opera.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/admin-safari.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/adminPage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/blogPage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/landing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/landingPage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/loginPage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/sidebarPage.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/gzca/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/startup-640x1096.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/GZCA-WebDemo/gzca/servlet/gzcaverifylogin/gzcaverifylogin.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/GZCA-WebDemo/gzca/test/Test.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/GZCA_WebDemo_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Spark_platform_sdk_dependence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gzca.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gzca_dependece.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/spark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GZCA-WebDemo.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/META-INF/context.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/admin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/amaze.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/amazeui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/amazeui.flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/amazeui.flat.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/amazeui.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/app.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/codemirror.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/landing.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/amazeui.ie8polyfill.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/amazeui.ie8polyfill.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/amazeui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/amazeui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/amazeui.widgets.helper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/amazeui.widgets.helper.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/gzca/logintest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/handlebars.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/netonex/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/netonex/jquery.sprintf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/netonex/netonex.base.src.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/netonex/netonex.singleton.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/netonex/objectclass.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/testpage/logintest.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/GZCA_WebDemo_war_exploded.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Spark_platform_sdk_dependence.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/gzca.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/gzca_dependece.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/spark.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/GZCA-WebDemo.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/META-INF/context.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/WEB-INF/classes/gzca/servlet/gzcaverifylogin/gzcaverifylogin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/WEB-INF/classes/gzca/test/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/WEB-INF/web.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/admin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/amaze.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/amazeui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/amazeui.flat.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/amazeui.flat.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/amazeui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/app.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/codemirror.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/css/landing.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/app-icon72x72@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/admin-chrome.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/admin-firefox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/admin-ie.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/admin-opera.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/admin-safari.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/adminPage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/blogPage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/landing.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/landingPage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/loginPage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/examples/sidebarPage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/favicon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/gzca/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/i/startup-640x1096.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/amazeui.ie8polyfill.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/amazeui.ie8polyfill.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/amazeui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/amazeui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/amazeui.widgets.helper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/amazeui.widgets.helper.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/gzca/logintest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/handlebars.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/netonex/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/netonex/jquery.sprintf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/netonex/netonex.base.src.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/netonex/netonex.singleton.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/assets/js/netonex/objectclass.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/GZCA_WebDemo_war_exploded/testpage/logintest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GZCA-WebDemo/gzca/servlet/gzcaverifylogin/gzcaverifylogin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GZCA-WebDemo/gzca/test/Test.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gzca/ca/util/HttpSecurityClient.java" afterPath="$PROJECT_DIR$/src/gzca/ca/util/HttpSecurityClient.java" />
     </list>
     <ignored path="GZCA-WebDemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,18 +117,18 @@
       <file leaf-file-name="GZCA.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gzca/ca/GZCA.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2926">
-              <caret line="184" column="4" lean-forward="false" selection-start-line="184" selection-start-column="4" selection-end-line="228" selection-end-column="5" />
+            <state relative-caret-position="198">
+              <caret line="190" column="49" lean-forward="true" selection-start-line="190" selection-start-column="49" selection-end-line="190" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpSecurityClient.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HttpSecurityClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/gzca/ca/util/HttpSecurityClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="233">
+              <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,7 +136,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -402,6 +402,32 @@
             <path>
               <item name="GZCA-WebDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="GZCA-WebDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GZCA-WebDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GZCA-WebDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GZCA-WebDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GZCA-WebDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gzca" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GZCA-WebDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GZCA-WebDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gzca" type="462c0819:PsiDirectoryNode" />
+              <item name="ca" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GZCA-WebDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GZCA-WebDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gzca" type="462c0819:PsiDirectoryNode" />
+              <item name="ca" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1107,7 +1133,7 @@
       <workItem from="1501051094067" duration="2099000" />
       <workItem from="1501071098999" duration="1605000" />
       <workItem from="1501078894305" duration="1551000" />
-      <workItem from="1501082716375" duration="447000" />
+      <workItem from="1501082716375" duration="595000" />
     </task>
     <task id="LOCAL-00001" summary="Rejected commit: Default">
       <created>1491012939868</created>
@@ -1214,11 +1240,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499601044082</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="添加了.ignore文件，修改时编译的文件不会更新">
+      <created>1501083199704</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1501083199704</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="379002000" />
+    <option name="totallyTimeSpent" value="379150000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1358,7 +1391,8 @@
     <MESSAGE value="1.重写了验证用户证书管理系统的CA类为GZCA类，原有的SparkPlatformSDK包与gzca.jar包冲突的原因是gzcajar包使用了老版本的httpclient，该版本中很多方法在新版本httpclient中已经被禁用。&#10;2.经过测试之后，推送与gzcaverify验证都可以使用。" />
     <MESSAGE value="删除了asset中旧版本的NetOneX控件，使用时需要手动安装" />
     <MESSAGE value="增加了配置文件，用于连接地址配置。" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加了配置文件，用于连接地址配置。" />
+    <MESSAGE value="添加了.ignore文件，修改时编译的文件不会更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加了.ignore文件，修改时编译的文件不会更新" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1720,29 +1754,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/gzca/ca/GZCA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2926">
-          <caret line="184" column="4" lean-forward="false" selection-start-line="184" selection-start-column="4" selection-end-line="228" selection-end-column="5" />
+        <state relative-caret-position="198">
+          <caret line="190" column="49" lean-forward="true" selection-start-line="190" selection-start-column="49" selection-end-line="190" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gzca/ca/util/HttpSecurityClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="233">
+          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
