@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gzca_dependece">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/gzca_dependece/httpclient-4.5.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
