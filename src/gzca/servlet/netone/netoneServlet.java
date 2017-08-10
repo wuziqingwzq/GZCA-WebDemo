@@ -6,6 +6,7 @@ import com.syan.netonej.http.client.PCSClient;
 import com.syan.netonej.http.client.SVSClient;
 import com.syan.netonej.http.client.TSAClient;
 import com.syan.netonej.http.entity.TSR;
+import gzca.ca.GZCANetONEJ;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -25,20 +26,34 @@ public class netoneServlet extends HttpServlet {
         type = request.getParameter("type");
         switch (type) {
             case "verifycert": {
+                //使用httpsPost方式调用证书。
                 String cert = request.getParameter("NetOne_certB64");
-                SVSClient svsClient = new SVSClient();
-                svsClient.initClient("111.85.176.62", "9188");
+                GZCANetONEJ gzcaNetONEJ = new GZCANetONEJ();
+                String result = gzcaNetONEJ.verifyCert(cert);
+                System.out.println("验证证书" + result);
                 PrintWriter pw = response.getWriter();
-                try {
-                    int verifyResult = svsClient.verifyCertificate(cert);
-                    System.out.println(verifyResult);
+                if (result.equals("200")) {
                     pw.write("200:verify OK");
-                } catch (NetonejExcepption netonejExcepption) {
-                    netonejExcepption.printStackTrace();
+                } else {
                     pw.write("verify failed");
                 }
-                pw.close();
                 break;
+
+                //netoneJ调用验证证书
+//                String cert = request.getParameter("NetOne_certB64");
+//                SVSClient svsClient = new SVSClient();
+//                svsClient.initClient("111.85.176.62", "9188");
+//                PrintWriter pw = response.getWriter();
+//                try {
+//                    int verifyResult = svsClient.verifyCertificate(cert);
+//                    System.out.println(verifyResult);
+//                    pw.write("200:verify OK");
+//                } catch (NetonejExcepption netonejExcepption) {
+//                    netonejExcepption.printStackTrace();
+//                    pw.write("verify failed");
+//                }
+//                pw.close();
+//                break;
             }
             case "verifySignatureByNetOne": {
                 String cert = "";
@@ -114,7 +129,7 @@ public class netoneServlet extends HttpServlet {
                     for (int i = 0; i < certList.length; i++) {
                         System.out.println(certList[i]);
                     }
-                    String encryptData = pcsClient.pubKeyEncrypt(certList[0],"123456","kid",data);
+                    String encryptData = pcsClient.pubKeyEncrypt(certList[0], "123456", "kid", data);
                     pw.write(encryptData);
                 } catch (NetonejExcepption netonejExcepption) {
                     netonejExcepption.printStackTrace();
@@ -124,21 +139,21 @@ public class netoneServlet extends HttpServlet {
             }
 
             case "priKeyDecrypt": {
-                String data ;
-                String encryptData ="";
+                String data;
+                String encryptData = "";
                 encryptData = request.getParameter("netOneValue");
 
                 PCSClient pcsClient = new PCSClient();
                 pcsClient.initClient("111.85.176.62", "9178");
                 PrintWriter pw = response.getWriter();
-                String certList[] ;
+                String certList[];
 
                 try {
                     certList = pcsClient.getPcsIds();
                     for (int i = 0; i < certList.length; i++) {
                         System.out.println(certList[i]);
                     }
-                    data = pcsClient.priKeyDecrypt(certList[0],"123456","kid",encryptData);
+                    data = pcsClient.priKeyDecrypt(certList[0], "123456", "kid", encryptData);
                     pw.write(data);
                 } catch (NetonejExcepption netonejExcepption) {
                     netonejExcepption.printStackTrace();

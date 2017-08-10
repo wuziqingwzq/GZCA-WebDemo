@@ -72,6 +72,7 @@ public class HttpSecurityClient {
         try {
             closeableHttpResponse = (CloseableHttpResponse) httpClient.execute(httpPost);
             result = EntityUtils.toString(closeableHttpResponse.getEntity(), "UTF-8");
+            result = String.valueOf(closeableHttpResponse.getStatusLine().getStatusCode());
         } catch (IOException e) {
             e.printStackTrace();
         }
