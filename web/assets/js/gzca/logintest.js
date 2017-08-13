@@ -75,9 +75,9 @@ function verifyTimeStamp() {
         data: {netOneData: netOneData, netOneValue: netOneValue},
         dataType: "text",
         success: function (data) {
-            if(data=="error"){
+            if (data == "error") {
                 alert("verify failed")
-            }else {
+            } else {
                 alert(data);
             }
         },
@@ -95,9 +95,9 @@ function pubKeyEncrypt() {
         data: {netOneData: netOneData},
         dataType: "text",
         success: function (data) {
-            if(data=="error"){
+            if (data == "error") {
                 alert("request failed")
-            }else {
+            } else {
                 $("#netOneValue").val(data);
             }
         },
@@ -115,9 +115,9 @@ function priKeyDecrypt() {
         data: {netOneValue: netOneValue},
         dataType: "text",
         success: function (data) {
-            if(data=="error"){
+            if (data == "error") {
                 alert("decrypt failed");
-            }else {
+            } else {
                 $("#netOneValue").val(data);
                 alert("decrypt success");
             }
@@ -178,6 +178,7 @@ function updateCert() {
 //==========================================================================================================
 //先安控件操作函数
 var fingerprint;
+
 //加载证书选择框
 function loadCertificate(colx) {
     //colx.CF_Issuer_Contains="TESTCA";
@@ -307,6 +308,11 @@ function envopen() {
     }
 }
 
+function getSHA1() {
+    var data = $("#data").val();
+    $("#signature").val(doSHA1(data));
+}
+
 //获取用户证书管理系统直接录入的时间
 function gettime(timeString) {
     var time;
@@ -321,6 +327,7 @@ function doSHA1(str) {
     var singleton = Singleton.getInstance();
     var netonex = singleton.getNetOneX();
     var hashx = netonex.getHashX();
+    hashx.name="sha1";
     var teststr = hashx.HashString(str);
     return (teststr);
 }
@@ -351,7 +358,7 @@ $(document).ready(function () {
 
 $(function () {
     var $modal = $('#refresh-setting');
-    $modal.on('click',function () {
+    $modal.on('click', function () {
         alert("test");
         var type = "get";
         var settingtable;
@@ -370,7 +377,6 @@ $(function () {
 
     });
 })
-
 
 
 //通过证书文件写入到页面,将页面参数与JS代码分离
@@ -436,7 +442,7 @@ function verifycert() {
     var url = "/WebDemo/gzcaverifylogin";
     var param = "cert_sign_serial=" + $("#cert_sign_serial").val()
         + "&type=" + type;
-    param= encodeURI(param);
+    param = encodeURI(param);
     sendVerify(url, param);
 }
 
@@ -618,6 +624,7 @@ function getGZCAErr() {
     ms += "\n\n如有疑问，请拨打贵州省电子证书有限公司客服电话：0851-86402317,4007000813。";
     return ms;
 }
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
  *以上内容为GZCA张吉权增加
  *<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

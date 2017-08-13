@@ -1,6 +1,7 @@
 package gzca.ca.util;
 
 import org.apache.http.NameValuePair;
+import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -44,21 +45,12 @@ public class HttpSecurityClient {
     }
 
     /**
-     * 使用HTTPS协议与用户证书管理系统交互
-     *
-     * @throws URISyntaxException
+     * 用于创建https的Post方法
+     * @param uri 拼接的URI链接
+     * @param para 传入的参数
+     * @return
      */
-    public String HttpsDataPost(List<NameValuePair> para,String url,int port,String path) throws URISyntaxException {
-        //获取传入地址的host名，根据初始化配置来进行连接
-        String result = "";
-        URI uriByUrl = new URI(url);
-        System.out.println(uriByUrl);
-        URI uri = new URIBuilder()
-                .setScheme("https")
-                .setHost(uriByUrl.getHost())
-                .setPort(port)
-                .setPath(path)
-                .build();
+    private CloseableHttpResponse HttpsPost(URI uri,List<NameValuePair> para){
         HttpClient httpClient = HttpClients.custom()
                 .setSSLSocketFactory(createSSLConnSocketFactory())
                 .build();
@@ -66,12 +58,42 @@ public class HttpSecurityClient {
         CloseableHttpResponse closeableHttpResponse = null;
         try {
             httpPost.setEntity(new UrlEncodedFormEntity(para, HTTP.UTF_8));
+            closeableHttpResponse = (CloseableHttpResponse) httpClient.execute(httpPost);
+            return closeableHttpResponse;
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
+            return null;
+        } catch (ClientProtocolException e) {
+            e.printStackTrace();
+            return null;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
         }
+    }
+
+    /**
+     * 对外提供的方法
+     * @param para 传入的参数
+     * @param url  url地址，比如http://127.0.0.1
+     * @param port 端口 比如8080
+     * @param path 路径 比如/WebDemo
+     * @return
+     * @throws URISyntaxException
+     */
+    public String HttpsDataPost(List<NameValuePair> para,String url,int port,String path) throws URISyntaxException {
+        //获取传入地址的host名，根据初始化配置来进行连接
+        String result = "";
+        URI uriByUrl = new URI(url);
+        URI uri = new URIBuilder()
+                .setScheme("https")
+                .setHost(uriByUrl.getHost())
+                .setPort(port)
+                .setPath(path)
+                .build();
         try {
-            closeableHttpResponse = (CloseableHttpResponse) httpClient.execute(httpPost);
-            result = EntityUtils.toString(closeableHttpResponse.getEntity(), "UTF-8");
+            CloseableHttpResponse closeableHttpResponse = HttpsPost(uri, para);
+            result = EntityUtils.toString(closeableHttpResponse.getEntity());
             result = String.valueOf(closeableHttpResponse.getStatusLine().getStatusCode());
         } catch (IOException e) {
             e.printStackTrace();
@@ -79,6 +101,23 @@ public class HttpSecurityClient {
         return result;
     }
 
+    public CloseableHttpResponse HttpsPostRasp(List<NameValuePair> para,String url,int port,String path){
+        URI uriByUrl = null;
+        try {
+            uriByUrl = new URI(url);
+            URI uri = new URIBuilder()
+                    .setScheme("https")
+                    .setHost(uriByUrl.getHost())
+                    .setPort(port)
+                    .setPath(path)
+                    .build();
+            CloseableHttpResponse closeableHttpResponse = HttpsPost(uri, para);
+            return closeableHttpResponse;
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
 
 
     public static SSLConnectionSocketFactory createSSLConnSocketFactory() {
