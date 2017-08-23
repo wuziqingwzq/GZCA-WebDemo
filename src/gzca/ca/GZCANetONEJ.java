@@ -60,6 +60,7 @@ public class GZCANetONEJ {
         String result = null;
 
         List<NameValuePair> para = new ArrayList<NameValuePair>();
+        digest = GzcaUtil.sha1Encode(digest);
         para.add(new BasicNameValuePair("digest", digest));
         HttpSecurityClient httpSecurityClient = new HttpSecurityClient();
         HttpEntity entity = httpSecurityClient.HttpsPostRasp(para, Url, Port, Path).getEntity();
