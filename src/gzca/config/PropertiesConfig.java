@@ -1,7 +1,13 @@
 package gzca.config;
 
 
-import java.io.*;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 /**
@@ -12,6 +18,7 @@ public class PropertiesConfig {
 
     /**
      * 设置文件路径
+     *
      * @return
      */
     public String getFilepath() {
@@ -20,6 +27,7 @@ public class PropertiesConfig {
 
     /**
      * 获取文件路径
+     *
      * @param filepath
      */
     public void setFilepath(String filepath) {
@@ -28,6 +36,7 @@ public class PropertiesConfig {
 
     /**
      * 通过文件路径读取到配置类Properties
+     *
      * @return
      */
     public Properties readPropertyFile() {
@@ -67,19 +76,19 @@ public class PropertiesConfig {
         int result = 0;
         Properties prop = this.readPropertyFile();
         try {
-            if(prop.getProperty(propertyName)!=null){
+            if (prop.getProperty(propertyName) != null) {
                 Object setResult = prop.setProperty(propertyName, propertyValue);
                 String fullFilepath = getClass().getResource(this.filepath).getPath();
                 FileOutputStream fileOutputStream = new FileOutputStream(fullFilepath);
-                if (setResult!=null){
-                    prop.store(fileOutputStream,"");
-                    result= 1;
-                }else {
+                if (setResult != null) {
+                    prop.store(fileOutputStream, "");
+                    result = 1;
+                } else {
                     System.out.println("推送失败");
-                    return  0;
+                    return 0;
                 }
                 fileOutputStream.close();
-            }else return 0;
+            } else return 0;
         } catch (FileNotFoundException e) {
             System.out.println("文件未找到，可能是路径错误");
             e.printStackTrace();
@@ -89,8 +98,28 @@ public class PropertiesConfig {
         }
         return result;
     }
+
     public int addConfig(String propertyName, String propertyValue) {
         int result = 0;
+
         return result;
+    }
+
+    /**
+     * 获取配置文件中的所有配置项
+     * @return Map配置项集合
+     */
+    public Map getAllConfig() {
+        Map mapProperties = new HashMap<String ,String >();
+        String key;
+        String value;
+        Properties prop = this.readPropertyFile();
+        Enumeration en = prop.propertyNames();
+        while (en.hasMoreElements()) {
+            key = (String) en.nextElement();
+            value = this.getConfig(key);
+            mapProperties.put(key,value);
+        }
+        return mapProperties;
     }
 }

@@ -10,9 +10,15 @@
     <list id="0ccf9684-8b5f-4d9e-a58d-9d1970cb0783" name="合并代码" comment="合并代码" />
     <list id="6f300cc8-dc80-463e-bdbe-019c7633ae9f" name="1.修复了由于项目机构引起的引用包错误，无法调用Spark-format-sdk的问题。" comment="1.修复了由于项目机构引起的引用包错误，无法调用Spark-format-sdk的问题。" />
     <list default="true" id="bb1dd5e0-78be-4008-91dc-2b828f95512e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gzca/util/GzcaUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/gzca/servlet/configpage/PageConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plug/datatables/jquery.dataTables.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/assets/plug/datatables/jquery.dataTables.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gzca/ca/GZCANetONEJ.java" afterPath="$PROJECT_DIR$/src/gzca/ca/GZCANetONEJ.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Config.properties" afterPath="$PROJECT_DIR$/src/Config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gzca/config/PropertiesConfig.java" afterPath="$PROJECT_DIR$/src/gzca/config/PropertiesConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/gzca/test/Test.java" afterPath="$PROJECT_DIR$/src/gzca/test/Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/js/gzca/logintest.js" afterPath="$PROJECT_DIR$/web/assets/js/gzca/logintest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/testpage/logintest.html" afterPath="$PROJECT_DIR$/web/testpage/logintest.html" />
     </list>
     <ignored path="GZCA-WebDemo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,18 +57,38 @@
       <file leaf-file-name="logintest.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/testpage/logintest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+            <state relative-caret-position="1956">
+              <caret line="127" column="46" lean-forward="true" selection-start-line="127" selection-start-column="46" selection-end-line="127" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Config.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Config.properties">
+      <file leaf-file-name="logintest.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/assets/js/gzca/logintest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+            <state relative-caret-position="265">
+              <caret line="361" column="39" lean-forward="true" selection-start-line="361" selection-start-column="39" selection-end-line="361" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PageConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gzca/servlet/configpage/PageConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="netoneServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gzca/servlet/netone/netoneServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -71,48 +97,28 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/gzca/test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+            <state relative-caret-position="175">
+              <caret line="128" column="24" lean-forward="true" selection-start-line="128" selection-start-column="24" selection-end-line="128" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GZCA.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/gzca/ca/GZCA.java">
+      <file leaf-file-name="PropertiesConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/gzca/config/PropertiesConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-              <folding>
-                <element signature="e#2181#2196#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="244">
+              <caret line="122" column="29" lean-forward="true" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GzcaUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gzca/util/GzcaUtil.java">
+      <file leaf-file-name="Properties.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_45/src.zip!/java/util/Properties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1465">
-              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1021#1022#0" expanded="true" />
-                <element signature="e#1083#1084#0" expanded="true" />
-                <element signature="e#3200#3201#0" expanded="true" />
-                <element signature="e#3268#3269#0" expanded="true" />
-                <element signature="e#3334#3335#0" expanded="true" />
-                <element signature="e#3410#3411#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HexString.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/gzca/util/HexString.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="343">
+              <caret line="1005" column="39" lean-forward="false" selection-start-line="1005" selection-start-column="26" selection-end-line="1005" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -159,6 +165,8 @@
       <find>verifySignatureByNetOne()</find>
       <find>envopen()</find>
       <find>println</find>
+      <find>test</find>
+      <find>alert(</find>
     </findStrings>
   </component>
   <component name="Git.Rebase.Settings">
@@ -185,10 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/gzca/https/CA.java" />
-        <option value="$PROJECT_DIR$/src/gzca/https/SSLClient.java" />
-        <option value="$PROJECT_DIR$/web/admin-404.html" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/assets/js/netonex/netone_zjq.js" />
         <option value="$PROJECT_DIR$/web/assets/js/netonex/netonex_zjq.js" />
         <option value="$PROJECT_DIR$/web/assets/js/gzca/netonex_zjq.js" />
@@ -217,25 +221,29 @@
         <option value="$PROJECT_DIR$/src/gzca/servlet/gzcaverifylogin/gzcaverifylogin.java" />
         <option value="$PROJECT_DIR$/lib/spark-app-sdk-1.0.3.jar!/cn/com/syan/spark/app/sdk/connect/oauth/Oauth.class" />
         <option value="$PROJECT_DIR$/lib/NetONEJ-1.0.0.2.jar!/org/apache/http/client/methods/HttpEntityEnclosingRequestBase.class" />
-        <option value="$PROJECT_DIR$/src/Config.properties" />
         <option value="$PROJECT_DIR$/src/gzca/servlet/netone/netoneConfig.java" />
         <option value="$PROJECT_DIR$/src/gzca/config/DemoConfig.java" />
         <option value="$PROJECT_DIR$/src/gzca/config/GetConfig.java" />
         <option value="$PROJECT_DIR$/src/gzca/config/ConfigBean.java" />
-        <option value="$PROJECT_DIR$/out/production/GZCA-WebDemo/Config.properties" />
         <option value="$PROJECT_DIR$/src/gzca/servlet/getsetting/GetSetting.java" />
-        <option value="$PROJECT_DIR$/src/gzca/config/PropertiesConfig.java" />
         <option value="$PROJECT_DIR$/src/gzca/servlet/sparkredirect/SendRedirectToSpark.java" />
-        <option value="$PROJECT_DIR$/src/gzca/test/Test.java" />
-        <option value="$PROJECT_DIR$/web/testpage/logintest.html" />
         <option value="$PROJECT_DIR$/src/gzca/util/HexString.java" />
-        <option value="$PROJECT_DIR$/web/assets/js/gzca/logintest.js" />
         <option value="$PROJECT_DIR$/src/gzca/ca/GZCA.java" />
         <option value="$PROJECT_DIR$/src/gzca/ca/util/HttpSecurityClient.java" />
         <option value="$PROJECT_DIR$/src/gzca/ca/util/GzcaUtil.java" />
         <option value="$PROJECT_DIR$/src/gzca/servlet/netone/netoneServlet.java" />
         <option value="$PROJECT_DIR$/src/gzca/util/GzcaUtil.java" />
         <option value="$PROJECT_DIR$/src/gzca/ca/GZCANetONEJ.java" />
+        <option value="$PROJECT_DIR$/out/production/GZCA-WebDemo/Config.properties" />
+        <option value="$PROJECT_DIR$/src/gzca/test/Test.java" />
+        <option value="$PROJECT_DIR$/src/gzca/config/PropertiesConfig.java" />
+        <option value="$PROJECT_DIR$/src/gzca/servlet/configpage/PageConfig.java" />
+        <option value="$PROJECT_DIR$/web/assets/js/gzca/config.js" />
+        <option value="$PROJECT_DIR$/web/assets/css/datatables/jquery.dataTables.min.css" />
+        <option value="$PROJECT_DIR$/web/assets/plug/datatables/jquery.dataTables.min.css" />
+        <option value="$PROJECT_DIR$/src/Config.properties" />
+        <option value="$PROJECT_DIR$/web/testpage/logintest.html" />
+        <option value="$PROJECT_DIR$/web/assets/js/gzca/logintest.js" />
       </list>
     </option>
   </component>
@@ -319,32 +327,6 @@
             <path>
               <item name="GZCA-WebDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="GZCA-WebDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GZCA-WebDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GZCA-WebDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="NetONEJ-1.0.0.2.jar" type="ab9368bb:PsiFileNode" />
-            </path>
-            <path>
-              <item name="GZCA-WebDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GZCA-WebDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="NetONEJ-1.0.0.2.jar" type="ab9368bb:PsiFileNode" />
-              <item name="netonej" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GZCA-WebDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GZCA-WebDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="NetONEJ-1.0.0.2.jar" type="ab9368bb:PsiFileNode" />
-              <item name="netonej" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GZCA-WebDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GZCA-WebDemo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -358,7 +340,7 @@
               <item name="GZCA-WebDemo" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="gzca" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GZCA-WebDemo" type="b2602c69:ProjectViewProjectNode" />
@@ -370,6 +352,21 @@
               <item name="GZCA-WebDemo" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GZCA-WebDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GZCA-WebDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="plug" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GZCA-WebDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GZCA-WebDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="plug" type="462c0819:PsiDirectoryNode" />
+              <item name="datatables" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GZCA-WebDemo" type="b2602c69:ProjectViewProjectNode" />
@@ -396,18 +393,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WorkSpace\GZCA-WebDemo\web\assets\plug" />
       <recent name="D:\WorkSpace\GZCA-WebDemo" />
       <recent name="D:\WorkSpace\GZCA-WebDemo\src\lib" />
       <recent name="D:\WorkSpace\GZCA-WebDemo\src\lib\spark" />
       <recent name="D:\WorkSpace\GZCA-WebDemo\src\gzca" />
-      <recent name="D:\WorkSpace\GZCA-WebDemo\web" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WorkSpace\GZCA-WebDemo\web\assets\plug\datatables" />
+      <recent name="D:\WorkSpace\GZCA-WebDemo\web\assets\css\datatables" />
       <recent name="D:\WorkSpace\GZCA-WebDemo\lib" />
       <recent name="D:\WorkSpace\GZCA-WebDemo\lib\spark-app-sdk-1.0.3.jar!\cn\com\syan\spark" />
       <recent name="D:\WorkSpace\GZCA-WebDemo\lib\spark-app-sdk-1.0.3.jar" />
-      <recent name="D:\WorkSpace\GZCA-WebDemo\src\gzca\ca\util" />
-      <recent name="D:\WorkSpace\GZCA-WebDemo\src\gzca\ca" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="gzca.test" />
@@ -1219,11 +1216,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502376921461</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="处理了时间戳只能传SHA-1摘要值的问题">
+      <created>1503471324129</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1503471324129</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="423321000" />
+    <option name="totallyTimeSpent" value="440085000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1248,18 +1252,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960254" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4064915" sideWeight="0.8365079" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5795981" sideWeight="0.8365079" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32612056" sideWeight="0.49722" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49459043" sideWeight="0.43730158" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32612056" sideWeight="0.49722" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30911902" sideWeight="0.6873016" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16383308" sideWeight="0.63492066" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33693972" sideWeight="0.6873016" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11591963" sideWeight="0.63492066" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32612056" sideWeight="0.49086577" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27323273" sideWeight="0.46085012" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23749007" sideWeight="0.5391499" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27323273" sideWeight="0.6969697" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27323273" sideWeight="0.3030303" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766616" sideWeight="0.4968254" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1392,7 +1396,8 @@
     <MESSAGE value="Revert &quot;删除tracked的文件&quot;&#10;&#10;This reverts commit 9ee873c351bba12a7bf14e010ec235ad4540e415." />
     <MESSAGE value="新增了GZCANetONEJ类，用于和网关通信验证" />
     <MESSAGE value="新增了gzcanetoneJ的一个方法，用于验证证书。" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增了gzcanetoneJ的一个方法，用于验证证书。" />
+    <MESSAGE value="处理了时间戳只能传SHA-1摘要值的问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="处理了时间戳只能传SHA-1摘要值的问题" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1425,14 +1430,11 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="192" />
+      <option name="time" value="200" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
         <watch expression="closeableHttpResponse" />
-      </configuration>
-      <configuration name="Application">
-        <watch expression="HttpClientDelegate" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -1441,29 +1443,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/lib/gzca_dependece/httpclient-4.5.3.jar!/org/apache/http/client/methods/HttpPost.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/NetONEJ-1.0.0.2.jar!/org/apache/http/client/HttpClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gzca/ca/HttpClientUtil.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/gzca_dependece/httpclient-4.5.3.jar!/org/apache/http/auth/AUTH.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gzca/ca/CA.java" />
     <entry file="jar://$PROJECT_DIR$/lib/NetONEJ-1.0.0.2.jar!/org/apache/http/client/methods/HttpPost.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -1516,7 +1495,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/out/Config.properties" />
     <entry file="file://$PROJECT_DIR$/out/production/GZCA-WebDemo/gzca/Config.properties" />
-    <entry file="file://$PROJECT_DIR$/out/production/GZCA-WebDemo/Config.properties" />
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_45/src.zip!/java/lang/ClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -1549,21 +1527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gzca/test/HLJTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gzca/config/PropertiesConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="92" column="23" lean-forward="false" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1609,38 +1572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gzca/test/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/testpage/logintest.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/js/gzca/logintest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6270">
-          <caret line="330" column="40" lean-forward="false" selection-start-line="330" selection-start-column="40" selection-end-line="330" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1693,16 +1624,8 @@
         <state relative-caret-position="111">
           <caret line="96" column="37" lean-forward="false" selection-start-line="96" selection-start-column="25" selection-end-line="96" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/gzca/servlet/netone/netoneServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="228" column="0" lean-forward="false" selection-start-line="228" selection-start-column="0" selection-end-line="228" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1729,13 +1652,13 @@
         <state relative-caret-position="-1465">
           <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1021#1022#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-            <element signature="e#3200#3201#0" expanded="true" />
-            <element signature="e#3268#3269#0" expanded="true" />
-            <element signature="e#3334#3335#0" expanded="true" />
-            <element signature="e#3410#3411#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1021#1022#0" expanded="false" />
+            <element signature="e#1083#1084#0" expanded="false" />
+            <element signature="e#3200#3201#0" expanded="false" />
+            <element signature="e#3268#3269#0" expanded="false" />
+            <element signature="e#3334#3335#0" expanded="false" />
+            <element signature="e#3410#3411#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1774,11 +1697,122 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/gzca/ca/GZCA.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+        <state relative-caret-position="1197">
+          <caret line="171" column="1" lean-forward="true" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
           <folding>
-            <element signature="e#2181#2196#0" expanded="true" />
+            <element signature="e#2181#2196#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gzca/test/HLJTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/GZCA-WebDemo/Config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_45/src.zip!/java/util/Properties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="1005" column="39" lean-forward="false" selection-start-line="1005" selection-start-column="26" selection-end-line="1005" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gzca/test/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="128" column="24" lean-forward="true" selection-start-line="128" selection-start-column="24" selection-end-line="128" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gzca/config/PropertiesConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="122" column="29" lean-forward="true" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/js/gzca/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/plug/datatables/jquery.dataTables.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="0" column="14111" lean-forward="false" selection-start-line="0" selection-start-column="14111" selection-end-line="0" selection-end-column="14111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/plug/datatables/jquery.dataTables.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="14" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="14" />
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="14" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="14" />
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="14" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="14" />
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="14" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/testpage/logintest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1956">
+          <caret line="127" column="46" lean-forward="true" selection-start-line="127" selection-start-column="46" selection-end-line="127" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gzca/servlet/configpage/PageConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/gzca/servlet/netone/netoneServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="30" column="51" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/js/gzca/logintest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="361" column="39" lean-forward="true" selection-start-line="361" selection-start-column="39" selection-end-line="361" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>

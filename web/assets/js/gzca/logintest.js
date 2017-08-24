@@ -327,7 +327,7 @@ function doSHA1(str) {
     var singleton = Singleton.getInstance();
     var netonex = singleton.getNetOneX();
     var hashx = netonex.getHashX();
-    hashx.name="sha1";
+    hashx.name = "sha1";
     var teststr = hashx.HashString(str);
     return (teststr);
 }
@@ -341,42 +341,50 @@ $(document).ready(function () {
     namevalue = $("input[name='tabsSelect']").attr("value");
 });
 
-//设置按钮模态窗口
-// $(function() {
-//     var $modal = $('#your-modal');
-//     $modal.siblings('.am-btn').on('click', function(e) {
-//         var $target = $(e.target);
-//         if (($target).hasClass('js-modal-open')) {
-//             $modal.modal();
-//         } else if (($target).hasClass('js-modal-close')) {
-//             $modal.modal('close');
-//         } else {
-//             $modal.modal('toggle');
-//         }
-//     });
-// });
+$(function () {
+    $('#example').DataTable({
+        "searching": false,
+        "scrollY": "200px",
+        "scrollCollapse": true,
+        "paging": false,
+        "ajax": {
+            "url": "../pageconfig?type=show",
+            "type": "POST",
+            "data": {type: "get"},
+            "ataType": "json",
+            "columns": [
+                {"data": "gzcaverifyIP  " },
+                {"data": "gzcaverifyPort" },
+                {"data": "netOneSVSIP   " },
+                {"data": "netOneSVSPort " },
+                {"data": "netOnePCSIP   " },
+                {"data": "netOnePCSPort " },
+                {"data": "netOneTSAIP   " },
+            ]
+        }
+    });
+});
 
 $(function () {
     var $modal = $('#refresh-setting');
     $modal.on('click', function () {
-        alert("test");
         var type = "get";
-        var settingtable;
         $.ajax({
             type: "post",//数据发送的方式（post 或者 get）
-            url: "../getSetting",
+            url: "../pageconfig?type=show",
             data: {type: type},
-            dataType: "text",
+            dataType: "json",
             success: function (data) {//ajax请求成功后触发的方法
-                alert(data);
+                // alert(data);
+                alert( $('#example').DataTable().page.len());
             },
             error: function (msg) {//ajax请求失败后触发的方法
-                alert("Update Error");
+                alert("get config error");
             }
         });
 
     });
-})
+});
 
 
 //通过证书文件写入到页面,将页面参数与JS代码分离

@@ -41,13 +41,16 @@
     <script src="../assets/js/handlebars.min.js?v=iir8iz5n"></script>
     <script src="../assets/js/amazeui.min.js?v=iir8iz5n"></script>
 
+    <!-- Jquery数据表格插件 -->
+    <link rel="stylesheet" type="text/css" src="../assets/plug/datatables/jquery.dataTables.min.css">
+    <script src="../assets/plug/datatables/jquery.dataTables.min.js"></script>
+
     <!-- 获取证书项JS，先安控件 -->
     <!--<script  src="../assets/js/netonex/jquery.js"></script>-->
     <script src="../assets/js/netonex/jquery.sprintf.js"></script>
     <script src="../assets/js/netonex/objectclass.js"></script>
     <script src="../assets/js/netonex/netonex.base.src.js"></script>
     <script src="../assets/js/netonex/netonex.singleton.js"></script>
-    <script src="../assets/js/gzca/netonx_zjq.js"></script>
     <script src="../assets/js/gzca/logintest.js"></script>
 </head>
 
@@ -97,32 +100,80 @@
                 </div>
                 <div class="am-modal-bd" id ="setting-context">
                     <div>
-                        <table class="am-table" id="demo-test-">
+                        <!--<table class="am-table" id="configtables">-->
+                            <!--<thead>-->
+                                <!--<tr>-->
+                                    <!--<th>配置信息</th>-->
+                                    <!--<th>连接地址</th>-->
+                                    <!--<th>操作</th>-->
+                                <!--</tr>-->
+                            <!--</thead>-->
+                            <!--<tbody>-->
+                            <!---->
+                            <!--</tbody>-->
+                            <!--<tfoot>-->
+                                <!--<tr>-->
+                                    <!--<th>-->
+                                        <!---->
+                                    <!--</th>-->
+                                <!--</tr>-->
+                            <!--</tfoot>-->
+                        <!--</table>-->
+
+                        <table id="example" class="display">
                             <thead>
-                                <tr>
-                                    <th>配置信息</th>
-                                    <th>连接地址</th>
-                                    <th>操作</th>
-                                </tr>
+                            <tr>
+                                <th>Code</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                            </tr>
                             </thead>
                             <tbody>
-
+                            <!--<tr>-->
+                                <!--<td>001</td><td>name1</td><td>2323</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>002</td><td>name2</td><td>4612</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>003</td><td>name3</td><td>4612</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>004</td><td>name4</td><td>4612</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>005</td><td>name5</td><td>4612</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>006</td><td>name6</td><td>4612</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>007</td><td>name7</td><td>4612</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>008</td><td>name8</td><td>4612</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>009</td><td>name9</td><td>4612</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>010</td><td>name10</td><td>4612</td>-->
+                            <!--</tr>-->
+                            <!--<tr>-->
+                                <!--<td>011</td><td>name11</td><td>4612</td>-->
+                            <!--</tr>-->
                             </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>
-                                        <a href="#title-link" class="" id="refresh-setting">
-                                            <i class="am-icon-refresh am-icon-sm" aria-hidden="true"></i>
-                                            刷新
-                                        </a>
-                                        <a href="#title-link" class="add-setting">
-                                            <i class="am-icon-plus am-icon-sm" aria-hidden="true"></i>
-                                            新增
-                                        </a>
-                                    </th>
-                                </tr>
-                            </tfoot>
                         </table>
+                        <div>
+                            <a href="#title-link" class="" id="refresh-setting">
+                                <i class="am-icon-refresh am-icon-sm" aria-hidden="true" onclick="getconfig()"></i>
+                                刷新
+                            </a>
+                            <a href="#title-link" class="add-setting">
+                                <i class="am-icon-plus am-icon-sm" aria-hidden="true"></i>
+                                新增
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
