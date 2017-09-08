@@ -12,6 +12,7 @@
           <element id="library" level="project" name="Spark_platform_sdk_dependence" />
           <element id="library" level="project" name="spark" />
           <element id="library" level="project" name="gzca_dependece" />
+          <element id="library" level="application" name="Spark_platform_sdk_dependence" />
         </element>
       </element>
     </root>

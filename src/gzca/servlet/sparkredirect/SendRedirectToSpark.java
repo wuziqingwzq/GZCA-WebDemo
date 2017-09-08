@@ -7,6 +7,7 @@ import cn.com.syan.spark.app.sdk.classified.entity.Response;
 import cn.com.syan.spark.app.sdk.classified.entity.User;
 import cn.com.syan.spark.app.sdk.connect.SparkConnectException;
 import cn.com.syan.spark.app.sdk.connect.oauth.Oauth;
+import gzca.config.PropertiesConfig;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -69,49 +70,31 @@ public class SendRedirectToSpark extends HttpServlet {
                 /****
                  * 以下代码为调用接口示例代码
                  */
-                String URL="";
-                String PrivateKey="";
-                String Cert ="";
+                //推送数据客户端的配置
+                String Url = "http://www.gzca.net.cn";
+                PropertiesConfig pc = new PropertiesConfig();
+                Url = pc.getConfig("spark_url");
+                String PrivateKey =pc.getConfig("spark_private_key");    //管理员私钥
+                String Cert = pc.getConfig("spark_certificate");          //管理员证书公钥
+                //使用自定义配置初始化客户端
+                SparkClient sc = new SparkClient(Url,PrivateKey,Cert);
 
-                SparkClient sc = SparkClients.getDefaultClient();
+                //获取默认的客户端
+                //SparkClient sc = SparkClients.getDefaultClient();
+
                 User user = new User();
                 user.setCertificate(userCert);
                 user.setName(userName);       //设置用户名称 或者单位名称     如果不设置 系统为默认使用证书CN项作为名称
                 user.setIdno(userIdNo);               //证件号
                 List<Oid> oidList = new ArrayList<Oid>();
                 Oid oid = new Oid();
-                oid.setOidMask("Test_Group_OID");             //组扩展 标识
+                oid.setOidMask(pc.getConfig("Spark_OidMask"));             //组扩展 标识
                 oid.setOidValue(userOid);           //组上扩展值
                 oidList.add(oid);
                 /**
                  * 如果应用组没有oid扩展  oidList 可以为null
                  * 如   sc.joinGroup(user,1,null);
                  */
-//                Response r = null;
-//                User user = new User();
-//                for (int i = 100100; i < 200000; i++) {
-//                    String ii = "" + i;
-//                    List<Oid> oidList = new ArrayList<Oid>();
-//                    user.setCertificate(userCert);
-//                    user.setName(userName+ii);       //设置用户名称 或者单位名称     如果不设置 系统为默认使用证书CN项作为名称
-//                    user.setIdno(userIdNo+ii);               //证件号
-//                    Oid oid = new Oid();
-//                    oid.setOidMask("Test_Group_OID");
-//                         //组扩展 标识
-//                    oid.setOidValue(userOid+ii);           //组上扩展值
-//                    oidList.add(oid);
-//
-//                    try {
-//                        r = sc.joinGroup(user, 1, oidList);
-//                    } catch (CertificateException e) {
-//                        e.printStackTrace();
-//                    } catch (InvalidKeySpecException e) {
-//                        e.printStackTrace();
-//                    } catch (SignatureException e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-
                 Response r = null;
                 try {
                     r = sc.joinGroup(user, 1, oidList);
