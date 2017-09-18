@@ -77,9 +77,13 @@ public class GZCANetONEJ {
         List<NameValuePair> para = new ArrayList<NameValuePair>();
         para.add(new BasicNameValuePair("tsr", tsr));
         HttpSecurityClient httpSecurityClient = new HttpSecurityClient();
-        HttpEntity entity = httpSecurityClient.HttpsPostRasp(para, Url, Port, Path).getEntity();
+//        HttpEntity entity = httpSecurityClient.HttpsPostRasp(para, Url, Port, Path).getEntity();
+        CloseableHttpResponse rsps = httpSecurityClient.HttpsPostRasp(para,Url,Port,Path);
         try {
-            result = EntityUtils.toString(entity);
+            if (rsps.getStatusLine().getStatusCode()==200){
+                HttpEntity entity = rsps.getEntity();
+                result = EntityUtils.toString(entity);
+            }else return null;
             return result;
         } catch (IOException e) {
             e.printStackTrace();

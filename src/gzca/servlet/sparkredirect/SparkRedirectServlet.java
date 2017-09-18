@@ -26,6 +26,7 @@ import java.util.List;
 public class SparkRedirectServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         try {
+            //从用户回调的请求中获取到认证令牌AccessToken
             AccessToken accessTokenObj = (new Oauth()).getAccessTokenByRequest(request);
             String accessToken = "";
             String openID = "";
@@ -50,6 +51,7 @@ public class SparkRedirectServlet extends HttpServlet {
             UserExtension userExtension = new UserExtension(accessToken,openid);
             UserExtensionBean userExtensionBean = userExtension.getUserExtension();
 
+            //在扩展项List中可以获取到UUID
             List<ExtensionOIDBean> lst = userExtensionBean.getExtensionOIDBeans();
             System.out.println(lst.isEmpty());
             System.out.println("扩展信息：" + lst.size());

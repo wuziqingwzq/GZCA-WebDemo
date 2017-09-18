@@ -36,7 +36,7 @@ public class SendRedirectToSpark extends HttpServlet {
         typelist.add("pushCert");
         typelist.add("updateCert");
 
-        //确定选择某一模块
+        //确定选择功能模块
         for (int i = 0; i < typelist.size(); i++) {
             if (typelist.get(i).equals(type)) {
                 typeIndex = i;
@@ -47,17 +47,16 @@ public class SendRedirectToSpark extends HttpServlet {
         switch (typeIndex) {
             case 0: {
                 try {
-                    Oauth oauth = new Oauth();
-                    String authURL = oauth.getAuthorizeURL(request);
-                    System.out.println(authURL);
-                    response.sendRedirect(authURL);
+                    Oauth oauth = new Oauth();                          //创建一个Oauth对象
+                    String authURL = oauth.getAuthorizeURL(request);    //获取到统一互认地址
+                    response.sendRedirect(authURL);                     //将用户的请求重定向到统一认证地址
                     break;
                 } catch (SparkConnectException e) {
                     e.printStackTrace();
                     break;
                 }
             }
-            //推送数据
+            //推送数据到统一互认平台
             case 1: {
                 String userName = "";
                 String userIdNo = "";
@@ -82,22 +81,28 @@ public class SendRedirectToSpark extends HttpServlet {
                 //获取默认的客户端
                 //SparkClient sc = SparkClients.getDefaultClient();
 
-                User user = new User();
-                user.setCertificate(userCert);
-                user.setName(userName);       //设置用户名称 或者单位名称     如果不设置 系统为默认使用证书CN项作为名称
-                user.setIdno(userIdNo);               //证件号
-                List<Oid> oidList = new ArrayList<Oid>();
-                Oid oid = new Oid();
-                oid.setOidMask(pc.getConfig("Spark_OidMask"));             //组扩展 标识
-                oid.setOidValue(userOid);           //组上扩展值
+                //创建用户对象
+//                cn.com.syan.spark.app.sdk.classified.entity.User user = new cn.com.syan.spark.app.sdk.classified.entity.User();
+                User user = new User();               //创建用户类
+                user.setCertificate(userCert);        //设置用户证书B64
+                user.setName(userName);               //设置用户名称 或者单位名称     如果不设置 系统为默认使用证书CN项作为名称
+                user.setIdno(userIdNo);               //设置证件号（组织机构代码或身份证号）
+
+                List<Oid> oidList = new ArrayList<Oid>();                               //创建扩展列表
+                Oid oid = new Oid();                                                    //创建扩展项类
+                oid.setOidMask(pc.getConfig("Spark_OidMask"));          //组扩展 标识（根据不同的应用，该项需要修改）
+                oid.setOidValue(userOid);                                               //组上扩展值（证书对应的UserID）
                 oidList.add(oid);
+
                 /**
                  * 如果应用组没有oid扩展  oidList 可以为null
                  * 如   sc.joinGroup(user,1,null);
                  */
+//                int groupID = 1;
+                int groupID = Integer.valueOf(pc.getConfig("GroupID"));
                 Response r = null;
                 try {
-                    r = sc.joinGroup(user, 1, oidList);
+                    r = sc.joinGroup(user, groupID, oidList);                       //执行推送数据，参数2是组ID，根据不同的应用，该项需要修改
                 } catch (CertificateException e) {
                     e.printStackTrace();
                 } catch (InvalidKeySpecException e) {
@@ -105,7 +110,7 @@ public class SendRedirectToSpark extends HttpServlet {
                 } catch (SignatureException e) {
                     e.printStackTrace();
                 }
-                PrintWriter pw = response.getWriter();
+                PrintWriter pw = response.getWriter();                              //推送失败后
                 if (r == null) {
                     pw.write("push failed");
                     pw.close();

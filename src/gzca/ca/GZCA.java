@@ -93,7 +93,7 @@ public class GZCA {
 
         }else if(this.Url.indexOf("https://") == 0){
             List<NameValuePair> para = new ArrayList<NameValuePair>();
-            para.add(new BasicNameValuePair("forto", "VerifyCertificate"));
+            para.add(new BasicNameValuePair("forto", "VerifySign"));
             para.add(new BasicNameValuePair("Appnameen", this.Appname));
             para.add(new BasicNameValuePair("Serialnumber",serialnumber ));
             para.add(new BasicNameValuePair("Data",data));
